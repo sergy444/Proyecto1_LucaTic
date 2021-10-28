@@ -51,3 +51,25 @@ footer {
         padding: 1em !important;
     }
 }
+
+.flexFooter{
+    display: flex !important;
+        align-items: center !important;
+        justify-content: center;
+    }
+    .copyFooter{
+    
+        display: flex;
+        
+    }
+    
+    .copyFooter p{
+        margin: auto 0;
+        color: rgb(233, 249, 255);
+    }
+    
+    .redesFooter{
+        margin-right: 1.5em;
+        display: flex;
+    
+    }
