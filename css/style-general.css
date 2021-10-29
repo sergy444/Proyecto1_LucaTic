@@ -14,10 +14,12 @@ h6 {
     font-weight: 400;
     font-size: 4vh;
 }
-h1{
+
+h1 {
     font-size: 0px !important;
 }
-div.row{
+
+div.row {
     margin: 0px !important;
 }
 
@@ -30,7 +32,8 @@ footer {
     background-color: rgb(35, 40, 42);
     box-shadow: -5px -5px 5px rgb(0, 0, 0, 0.2);
 }
-header div.col-12{
+
+header div.col-12 {
     margin: 0px !important;
 }
 
@@ -59,26 +62,27 @@ header div.col-12{
     }
 }
 
-.flexFooter{
+.flexFooter {
     display: flex !important;
-        align-items: center !important;
-        justify-content: space-between;
-        margin: 0px!important;
-    }
-    .copyFooter{
-    
-        display: flex;
-        
-    }
-    
-    .copyFooter p{
-        margin: auto 0;
-        color: rgb(233, 249, 255);
-    }
-    
-    .redesFooter{
-        margin-top: 1em;
-        margin-right: 1.5em;
-        display: flex;
-    
-    }
+    align-items: center !important;
+    justify-content: space-between;
+    margin: 0px !important;
+}
+
+.copyFooter {
+
+    display: flex;
+
+}
+
+.copyFooter p {
+    margin: auto 0;
+    color: rgb(233, 249, 255);
+}
+
+.redesFooter {
+    margin-top: 1em;
+    margin-right: 1.5em;
+    display: flex;
+
+}
