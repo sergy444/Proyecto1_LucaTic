@@ -86,3 +86,7 @@ header div.col-12 {
 div.row {
     margin: 0px !important;
 }
+
+svg:hover{
+    filter: sepia(44%) saturate(3258%) hue-rotate(183deg) brightness(101%) contrast(101%);
+}
