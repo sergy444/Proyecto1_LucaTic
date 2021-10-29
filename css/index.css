@@ -3,13 +3,26 @@ main {
   font-size: 3vh;
 }
 
+.carousel-item{
+  max-height: 670px;
+}
+
+.carousel-caption{
+  margin-bottom: 9.5vw;
+  text-shadow: 0.1em 0.1em 0.5em black;
+  text-shadow: -0.1em -0.1em 0.5em black;
+}
+
+.carousel-caption h2{
+  font-size: 8vw;
+}
+
 .col-text {
   font-size: 1.2em;
   margin: 25px;
 }
 
 .cartasReview {
-
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -65,4 +78,13 @@ main {
   background-position: center;
   background-size: cover;
 
+}
+
+@media (min-width:800px){
+  #carouselExampleIndicators{
+    max-height: 670px;
+  }
+  .carousel-inner{
+    max-height: 670px;
+  }
 }
