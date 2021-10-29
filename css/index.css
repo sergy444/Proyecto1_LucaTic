@@ -7,3 +7,62 @@ main {
   font-size: 1.2em;
   margin: 25px;
 }
+
+.cartasReview {
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgb(35, 40, 42);
+  box-shadow: 1em 0em 1em rgba(0, 0, 0, 0.397);
+  padding: 1em;
+
+}
+
+.filaReview {
+
+  padding: 1.2em;
+
+}
+
+.imagenReview {
+
+  height: 225px;
+  width: 225px;
+
+}
+
+.imagenReview img {
+
+  max-width: 100%;
+  size: cover;
+
+}
+
+.textoReview {
+
+  padding: 5px;
+  max-width: 800px;
+}
+
+#imagenReview1 {
+
+  background-image: url("../img/home/img-home-6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#imagenReview2 {
+
+  background-image: url("../img/home/img-home-7.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#imagenReview3 {
+
+  background-image: url("../img/home/img-home-8.png");
+  background-position: center;
+  background-size: cover;
+
+}

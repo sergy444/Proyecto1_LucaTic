@@ -37,6 +37,12 @@ header div.col-12 {
     margin: 0px !important;
 }
 
+.navbar img{
+
+align-self: flex-start;
+
+}
+
 .nav-link {
     padding: 0.5em !important;
 }
