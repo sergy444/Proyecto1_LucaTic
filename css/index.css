@@ -1,0 +1,9 @@
+main {
+  background-color: rgb(20, 25, 35);
+  font-size: 3vh;
+}
+
+.col-text {
+  font-size: 1.2em;
+  margin: 25px;
+}
