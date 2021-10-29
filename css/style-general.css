@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Zen Kaku Gothic New', 'Lato', 'Segoe UI', Tahoma, sans-serif;
+    color: rgb(233, 249, 255);
 }
 
 h1,
@@ -11,11 +12,15 @@ h4,
 h5,
 h6 {
     font-weight: 400;
+    font-size: 4vh;
 }
 
-body {
-    background-color: rgb(20, 25, 35);
-    color: rgb(233, 249, 255);
+h1 {
+    font-size: 0px !important;
+}
+
+div.row {
+    margin: 0px !important;
 }
 
 header {
@@ -28,18 +33,23 @@ footer {
     box-shadow: -5px -5px 5px rgb(0, 0, 0, 0.2);
 }
 
+header div.col-12 {
+    margin: 0px !important;
+}
+
 .nav-link {
     padding: 0.5em !important;
 }
 
 .nav-link>a {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    letter-spacing: -0.08em;
     color: rgb(233, 249, 255);
     text-decoration: none;
 }
 
 .nav-link>a:hover {
-    color: rgb(222, 230, 220);
+    color: rgb(233, 217, 255);
 }
 
 @media (min-width:560px) {
@@ -52,24 +62,27 @@ footer {
     }
 }
 
-.flexFooter{
+.flexFooter {
     display: flex !important;
-        align-items: center !important;
-        justify-content: space-between;
-    }
-    .copyFooter{
-    
-        display: flex;
-        
-    }
-    
-    .copyFooter p{
-        margin: auto 0;
-        color: rgb(233, 249, 255);
-    }
-    
-    .redesFooter{
-        margin-right: 1.5em;
-        display: flex;
-    
-    }
+    align-items: center !important;
+    justify-content: space-between;
+    margin: 0px !important;
+}
+
+.copyFooter {
+
+    display: flex;
+
+}
+
+.copyFooter p {
+    margin: auto 0;
+    color: rgb(233, 249, 255);
+}
+
+.redesFooter {
+    margin-top: 1em;
+    margin-right: 1.5em;
+    display: flex;
+
+}
