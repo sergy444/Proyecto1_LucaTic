@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Zen Kaku Gothic New', 'Lato', 'Segoe UI', Tahoma, sans-serif;
+    color: rgb(233, 249, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    font-size: 4vh;
+}
+
+h1 {
+    font-size: 0px !important;
+}
+
+div.row {
+    margin: 0px !important;
+}
+
+header {
+    background-color: rgb(35, 40, 42);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: rgb(35, 40, 42);
+    box-shadow: -5px -5px 5px rgb(0, 0, 0, 0.2);
+}
+
+header div.col-12 {
+    margin: 0px !important;
+}
+
+.nav-link {
+    padding: 0.5em !important;
+}
+
+.nav-link>a {
+    font-size: 1.2em;
+    letter-spacing: -0.08em;
+    color: rgb(233, 249, 255);
+    text-decoration: none;
+}
+
+.nav-link>a:hover {
+    color: rgb(233, 217, 255);
+}
+
+@media (min-width:560px) {
+    nav {
+        margin: 0 50px;
+    }
+
+    .nav-link {
+        padding: 1em !important;
+    }
+}
+
+.flexFooter {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+    margin: 0px !important;
+}
+
+.copyFooter {
+
+    display: flex;
+
+}
+
+.copyFooter p {
+    margin: auto 0;
+    color: rgb(233, 249, 255);
+}
+
+.redesFooter {
+    margin-top: 1em;
+    margin-right: 1.5em;
+    display: flex;
+
+}
