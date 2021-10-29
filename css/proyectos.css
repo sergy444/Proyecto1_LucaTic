@@ -4,6 +4,19 @@ main {
     padding: 1em;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none !important;
+}
+
+.bg-custom {
+    background-color: rgb(20, 25, 35);
+
+}
+
 div.card {
     background-color: rgb(35, 40, 42);
     font-size: 1.8vh;
@@ -12,15 +25,17 @@ div.card {
     box-shadow: 1em 0em 1em rgba(0, 0, 0, 0.397);
     padding: 1em;
 }
+
 div.card img {
     width: 100%;
 }
+
 div.card h2 {
     font-size: 2vh;
     letter-spacing: 0.1em;
 }
 
-div.card p{
+div.card p {
     padding: 1em;
 }
 
