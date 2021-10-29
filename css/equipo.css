@@ -1,4 +1,18 @@
 main {
-    background-color: rgb(20, 25, 35);
-    font-size: 2.2vh;
-  }
+  padding: 15px 0px;
+  background-color: rgb(20, 25, 35);
+  font-size: 2.2vh;
+}
+
+.img-container {
+  width: 80px;
+  height: 100px;
+}
+
+.profile-imgs {
+  width: 100%;
+}
+
+.text-container {
+  width: 60%;
+}
