@@ -33,6 +33,6 @@ textarea {
 
 h2,
 label {
-  color: black;
+  color: black !important;
   display: block !important;
 }
