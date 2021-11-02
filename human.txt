@@ -1,0 +1,27 @@
+/* TEAM */
+
+	Full Stack Developer: Benoit Laguerre
+	Linkedin: https://www.linkedin.com/in/benoit-laguerre-462214217/
+	From: París, Francia
+
+	Full Stack Developer: Miguel Ángel Hernández Perdomo
+	Linkedin: https://www.linkedin.com/in/miglehp/
+	From: Caracas, Venezuela
+
+	Full Stack Developer: Sergio Varela Galán
+	Linkedin: https://www.linkedin.com/in/sergio-varela/
+	From: Lasarte-Oria, País Vasco, Spain
+
+	Full Stack Developer: Joseba Ibarlucea
+	From: Venezuela
+
+	Full Stack Developer: María Infantes Lacal
+	Linkedin: https://www.linkedin.com/in/maría-infantes-lacal/
+	From: Madrid, Spain
+
+/* SITE */
+
+	Last Update: 2021/11/02
+	Language: English / Castellano
+	Doctype: HTML5
+	IDE: Visual Studio Code
