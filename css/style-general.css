@@ -37,6 +37,20 @@ header div.col-12 {
     margin: 0px !important;
 }
 
+header a {
+    font-size: 1.2em;
+    letter-spacing: -0.08em;
+    color: rgb(233, 249, 255);
+    text-decoration: none;
+}
+
+header a:hover {
+    font-size: 1.2em;
+    letter-spacing: -0.08em;
+    color: rgb(233, 217, 255);
+    text-decoration: none;
+}
+
 button:focus:not(:focus-visible) {
     outline: none !important;
 }
@@ -68,9 +82,9 @@ ul.d-flex.flex-column {
     color: rgb(233, 249, 255);
 }
 
-.navbar img{
+.navbar img {
 
-align-self: flex-start;
+    align-self: flex-start;
 
 }
 
@@ -117,11 +131,11 @@ align-self: flex-start;
 
 }
 
-.redesFooter li{
+.redesFooter li {
     display: inline;
 }
 
-.redesFooter li a{
+.redesFooter li a {
     text-decoration: none;
 }
 
