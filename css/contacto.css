@@ -13,6 +13,12 @@ input.wide {
   width: 100%;
 }
 
+iframe {
+  margin: 2em;
+  min-width: 80%;
+  min-height: 40vw;
+}
+
 textarea {
   overflow-x: auto;
   color: black;
