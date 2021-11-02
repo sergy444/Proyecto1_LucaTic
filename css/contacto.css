@@ -1,12 +1,17 @@
 main {
-  background-image: url("../img/contacto/pacman.jpg");
+  background: linear-gradient(45deg, rgb(13, 17, 24, 0.9) 0%, rgb(8, 23, 61, 0.9) 35%, rgb(10, 13, 19, 0.9) 100%), url("../img/contacto/pacman.jpg");
 }
 
 input {
   border: none;
   border-bottom: 1px solid black;
+  width: 100%;
   color: black;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.checkbox{
+  width: 0px;
 }
 
 textarea {
