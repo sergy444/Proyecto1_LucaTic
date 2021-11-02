@@ -13,7 +13,8 @@
 	From: Lasarte-Oria, País Vasco, Spain
 
 	Full Stack Developer: Joseba Ibarlucea
-	From: Venezuela
+	Linkedin: https://www.linkedin.com/in/joseba-ibarlucea-a97453185/
+	From: Maracaibo, Zulia, Venezuela
 
 	Full Stack Developer: María Infantes Lacal
 	Linkedin: https://www.linkedin.com/in/maría-infantes-lacal/
