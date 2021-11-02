@@ -4,9 +4,12 @@ main {
     padding: 1em;
 }
 
-div.card img {
-    width: 100%;
-    height: auto;
+main .row {
+    justify-content: space-around;
+}
+
+.col-12 {
+    margin-bottom: 1em;
 }
 
 div.card {
@@ -16,18 +19,17 @@ div.card {
     height: 100%;
     box-shadow: 1em 0em 1em rgba(0, 0, 0, 0.397);
     padding: 1em;
-    width: auto;
 }
 
-div.card h2 {
+div.card img {
+    width: 100%;
+}
+
+div.card h3 {
     font-size: 2vh;
     letter-spacing: 0.1em;
 }
 
-.col-12 {
-    margin-bottom: 1em;
-}
-
-main .row {
-    justify-content: space-around;
+div.card p {
+    padding: 1em;
 }

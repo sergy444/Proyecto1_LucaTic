@@ -19,9 +19,15 @@ h1 {
     font-size: 0px !important;
 }
 
-footer {
-    background-color: rgb(35, 40, 42);
-    box-shadow: -5px -5px 5px rgb(0, 0, 0, 0.2);
+main h2 {
+    font-size: 6.5vw;
+    text-align: center;
+    text-shadow: 2px 4px 4px rgb(114, 114, 114);
+    padding: 0.5em 0em;
+}
+
+div.row {
+    margin: 0px !important;
 }
 
 header {
@@ -29,8 +35,68 @@ header {
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 }
 
+footer {
+    background-color: rgb(35, 40, 42);
+    box-shadow: -5px -5px 5px rgb(0, 0, 0, 0.2);
+}
+
 header div.col-12 {
     margin: 0px !important;
+}
+
+header a {
+    font-size: 1.2em;
+    letter-spacing: -0.08em;
+    color: rgb(233, 249, 255);
+    text-decoration: none;
+}
+
+header a:hover {
+    font-size: 1.2em;
+    letter-spacing: -0.08em;
+    color: rgb(233, 217, 255);
+    text-decoration: none;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none !important;
+}
+
+svg g {
+    font-weight: none;
+    text-anchor: none;
+}
+
+svg.facebook:hover {
+    filter: invert(60%) sepia(26%) saturate(1161%) hue-rotate(182deg) brightness(92%) contrast(96%);
+}
+
+svg.github:hover {
+    filter: invert(69%) sepia(82%) saturate(3270%) hue-rotate(2deg) brightness(104%) contrast(104%);
+}
+
+svg.twitter:hover {
+    filter: invert(49%) sepia(31%) saturate(5002%) hue-rotate(166deg) brightness(103%) contrast(101%);
+}
+
+svg.youtube:hover {
+    filter: invert(87%) sepia(75%) saturate(7172%) hue-rotate(1deg) brightness(106%) contrast(117%);
+}
+
+ul.d-flex.flex-column {
+    padding: 0px;
+    justify-content: center;
+    list-style: none;
+}
+
+.bg-custom {
+    background-color: rgb(20, 25, 35);
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 50px;
+    box-shadow: 0.1em 0.1em 1em black;
+    box-shadow: -0.1em 0.1em 1em black;
 }
 
 .copyFooter {
@@ -44,11 +110,10 @@ header div.col-12 {
     color: rgb(233, 249, 255);
 }
 
-.flexFooter {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between;
-    margin: 0px !important;
+.navbar img {
+
+    align-self: flex-start;
+
 }
 
 .nav-link {
@@ -66,14 +131,17 @@ header div.col-12 {
     color: rgb(233, 217, 255);
 }
 
-@media (min-width:560px) {
-    nav {
-        margin: 0 50px;
-    }
 
-    .nav-link {
-        padding: 1em !important;
-    }
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.flexFooter {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+    margin: 0px !important;
 }
 
 .redesFooter {
@@ -83,6 +151,22 @@ header div.col-12 {
 
 }
 
-div.row {
-    margin: 0px !important;
+.redesFooter li {
+    display: inline;
+}
+
+.redesFooter li a {
+    text-decoration: none;
+}
+
+
+
+@media (min-width:560px) {
+    nav {
+        margin: 0 50px;
+    }
+
+    .nav-link {
+        padding: 1em !important;
+    }
 }

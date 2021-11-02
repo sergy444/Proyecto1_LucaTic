@@ -1,0 +1,88 @@
+main {
+  padding: 15px 0px;
+  background-color: rgb(20, 25, 35);
+  font-size: 2.2vh;
+}
+
+.carta-h {
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgb(35, 40, 42);
+  box-shadow: 1em 0em 1em rgba(0, 0, 0, 0.397);
+  padding: 1em;
+
+}
+
+.fila-carta-h {
+
+  padding: 1.2em;
+
+}
+
+.imagen-carta-h {
+
+  height: 225px;
+  width: 225px;
+
+}
+
+.imagen-carta-h img {
+  max-width: 100%;
+  size: cover;
+}
+
+.img-container {
+  width: 80px;
+  height: 100px;
+}
+
+
+.profile-imgs {
+  width: 100%;
+}
+
+.texto-carta-h {
+  padding: 5px;
+  max-width: 800px;
+}
+
+.text-container {
+  width: 60%;
+}
+
+#imagenMaria {
+  background-image: url("../img/equipo/lechon1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 1em;
+}
+
+#imagenBen {
+  background-image: url("../img/equipo/lechon2.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 1em;
+}
+
+#imagenMiguel {
+  background-image: url("../img/equipo/lechon3.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-right: 1em;
+}
+
+#imagenSergio {
+  background-image: url("../img/equipo/lechon4.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-right: 1em;
+}
+
+#imagenJoseba {
+  background-image: url("../img/equipo/lechon5.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-right: 1em;
+}

@@ -1,0 +1,126 @@
+main {
+  background-color: rgb(20, 25, 35);
+  font-size: 3vh;
+}
+
+.carousel-item {
+  max-height: 670px;
+}
+
+.carousel-caption {
+  margin-bottom: 9.5vw;
+  text-shadow: 0.1em 0.1em 0.5em black;
+  text-shadow: -0.1em -0.1em 0.5em black;
+}
+
+.carousel-caption h2 {
+  font-size: 8vw;
+}
+
+.cartasReview {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgb(35, 40, 42);
+  box-shadow: 1em 0em 1em rgba(0, 0, 0, 0.397);
+  padding: 1em;
+
+}
+
+.col-text {
+  font-size: 1.2em;
+  margin: 1em;
+  text-align: justify;
+}
+
+.col-text h2 {
+  font-size: 6vw;
+  text-align: center;
+  padding: 1em;
+}
+
+.col-text h3 {
+  font-size: 8vw;
+  text-align: center;
+  padding: 1em;
+}
+
+.filaReview {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.2em;
+}
+
+.imagenReview {
+  height: 225px;
+  width: 225px;
+}
+
+.imagenReview img {
+  max-width: 100%;
+  size: cover;
+}
+
+
+.textoReview {
+  padding: 5px;
+  width: 550px;
+}
+
+#reviews-title {
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+
+#imagenReview1 {
+
+  background-image: url("../img/home/img-home-6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#imagenReview2 {
+
+  background-image: url("../img/home/img-home-7.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#imagenReview3 {
+
+  background-image: url("../img/home/img-home-8.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+@media (min-width:600px) {
+  .col-text h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .col-text h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+  }
+}
+
+@media (min-width:800px) {
+  #carouselExampleIndicators {
+    max-height: 670px;
+  }
+
+  .carousel-inner {
+    max-height: 670px;
+  }
+}
+
+@media (min-width:1486px) {
+  .col-text {
+    margin: 2em 8em;
+  }
+}
