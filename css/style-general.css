@@ -170,3 +170,10 @@ ul.d-flex.flex-column {
         padding: 1em !important;
     }
 }
+
+@media (min-width:280px) {
+    footer ul {
+        display: flex;
+
+    }
+}
