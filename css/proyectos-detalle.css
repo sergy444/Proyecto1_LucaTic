@@ -4,33 +4,37 @@ main {
     padding: 1em;
 }
 
-img{
+img {
 
-max-width: 100%;
+    max-width: 100%;
 
 }
 
-div.fila{
+div.fila {
 
     margin-top: 15px !important;
+    margin-bottom: 15px !important;
     background-color: rgb(35, 40, 42);
     font-size: 2vh;
     letter-spacing: -0.025em;
     height: 100%;
     box-shadow: 1em 0em 1em rgba(0, 0, 0, 0.397);
     padding: 1em;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.infoProyecto, .textoProyecto{
+.infoProyecto,
+.textoProyecto {
 
-padding: 1em;
+    padding: 1em;
 
 }
 
-.infoProyecto ul li{
+.infoProyecto ul li {
 
-list-style: none;
-margin-top: 10px;
+    list-style: none;
+    margin-top: 10px;
 
 }
