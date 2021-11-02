@@ -51,11 +51,14 @@ main {
   padding: 1.2em;
 }
 
-.filaReview h3 {
+#reviews-title {
   text-align: center;
   font-size: 2em;
   padding: 10px;
 }
+
+
+
 
 .imagenReview {
 
@@ -70,6 +73,7 @@ main {
   size: cover;
 
 }
+
 
 .textoReview {
 
