@@ -4,6 +4,14 @@ main {
     padding: 1em;
 }
 
+main .row {
+    justify-content: space-around;
+}
+
+.col-12 {
+    margin-bottom: 1em;
+}
+
 div.card {
     background-color: rgb(35, 40, 42);
     font-size: 1.8vh;
@@ -24,12 +32,4 @@ div.card h3 {
 
 div.card p {
     padding: 1em;
-}
-
-.col-12 {
-    margin-bottom: 1em;
-}
-
-main .row {
-    justify-content: space-around;
 }

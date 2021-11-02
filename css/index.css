@@ -17,6 +17,16 @@ main {
   font-size: 8vw;
 }
 
+.cartasReview {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgb(35, 40, 42);
+  box-shadow: 1em 0em 1em rgba(0, 0, 0, 0.397);
+  padding: 1em;
+
+}
+
 .col-text {
   font-size: 1.2em;
   margin: 1em;
@@ -35,50 +45,32 @@ main {
   padding: 1em;
 }
 
-.cartasReview {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  background-color: rgb(35, 40, 42);
-  box-shadow: 1em 0em 1em rgba(0, 0, 0, 0.397);
-  padding: 1em;
-
-}
-
 .filaReview {
   display: flex;
   justify-content: space-around;
   padding: 1.2em;
 }
 
-#reviews-title {
-  text-align: center;
-  font-size: 2em;
-  padding: 10px;
-}
-
-
-
-
 .imagenReview {
-
   height: 225px;
   width: 225px;
-
 }
 
 .imagenReview img {
-
   max-width: 100%;
   size: cover;
-
 }
 
 
 .textoReview {
-
   padding: 5px;
   width: 550px;
+}
+
+#reviews-title {
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
 }
 
 #imagenReview1 {

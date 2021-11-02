@@ -4,20 +4,6 @@ main {
   font-size: 2.2vh;
 }
 
-.img-container {
-  width: 80px;
-  height: 100px;
-}
-
-
-.profile-imgs {
-  width: 100%;
-}
-
-.text-container {
-  width: 60%;
-}
-
 .carta-h {
 
   display: flex;
@@ -47,9 +33,23 @@ main {
   size: cover;
 }
 
+.img-container {
+  width: 80px;
+  height: 100px;
+}
+
+
+.profile-imgs {
+  width: 100%;
+}
+
 .texto-carta-h {
   padding: 5px;
   max-width: 800px;
+}
+
+.text-container {
+  width: 60%;
 }
 
 #imagenMaria {
