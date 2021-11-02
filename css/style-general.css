@@ -19,7 +19,7 @@ h1 {
     font-size: 0px !important;
 }
 
-main h2{
+main h2 {
     font-size: 6.5vw;
     text-align: center;
     text-shadow: 2px 4px 4px rgb(114, 114, 114);
@@ -60,6 +60,27 @@ header a:hover {
 
 button:focus:not(:focus-visible) {
     outline: none !important;
+}
+
+svg g {
+    font-weight: none;
+    text-anchor: none;
+}
+
+svg.facebook:hover {
+    filter: invert(60%) sepia(26%) saturate(1161%) hue-rotate(182deg) brightness(92%) contrast(96%);
+}
+
+svg.github:hover {
+    filter: invert(69%) sepia(82%) saturate(3270%) hue-rotate(2deg) brightness(104%) contrast(104%);
+}
+
+svg.twitter:hover {
+    filter: invert(49%) sepia(31%) saturate(5002%) hue-rotate(166deg) brightness(103%) contrast(101%);
+}
+
+svg.youtube:hover {
+    filter: invert(87%) sepia(75%) saturate(7172%) hue-rotate(1deg) brightness(106%) contrast(117%);
 }
 
 ul.d-flex.flex-column {
@@ -110,15 +131,7 @@ ul.d-flex.flex-column {
     color: rgb(233, 217, 255);
 }
 
-@media (min-width:560px) {
-    nav {
-        margin: 0 50px;
-    }
 
-    .nav-link {
-        padding: 1em !important;
-    }
-}
 
 .navbar-toggler:focus {
     box-shadow: none !important;
@@ -146,27 +159,14 @@ ul.d-flex.flex-column {
     text-decoration: none;
 }
 
-div.row {
-    margin: 0px !important;
-}
 
-svg g {
-    font-weight: none;
-    text-anchor: none;
-}
 
-svg.facebook:hover {
-    filter: invert(60%) sepia(26%) saturate(1161%) hue-rotate(182deg) brightness(92%) contrast(96%);
-}
+@media (min-width:560px) {
+    nav {
+        margin: 0 50px;
+    }
 
-svg.github:hover {
-    filter: invert(69%) sepia(82%) saturate(3270%) hue-rotate(2deg) brightness(104%) contrast(104%);
-}
-
-svg.twitter:hover {
-    filter: invert(49%) sepia(31%) saturate(5002%) hue-rotate(166deg) brightness(103%) contrast(101%);
-}
-
-svg.youtube:hover {
-    filter: invert(87%) sepia(75%) saturate(7172%) hue-rotate(1deg) brightness(106%) contrast(117%);
+    .nav-link {
+        padding: 1em !important;
+    }
 }
