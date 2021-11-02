@@ -19,6 +19,13 @@ h1 {
     font-size: 0px !important;
 }
 
+main h2{
+    font-size: 6.5vw;
+    text-align: center;
+    text-shadow: 2px 4px 4px rgb(114, 114, 114);
+    padding: 0.5em 0em;
+}
+
 div.row {
     margin: 0px !important;
 }
