@@ -3,33 +3,33 @@ main {
   font-size: 3vh;
 }
 
-.carousel-item{
+.carousel-item {
   max-height: 670px;
 }
 
-.carousel-caption{
+.carousel-caption {
   margin-bottom: 9.5vw;
   text-shadow: 0.1em 0.1em 0.5em black;
   text-shadow: -0.1em -0.1em 0.5em black;
 }
 
-.carousel-caption h2{
+.carousel-caption h2 {
   font-size: 8vw;
 }
 
-.col-text{
+.col-text {
   font-size: 1.2em;
   margin: 1em;
   text-align: justify;
 }
 
-.col-text h2{
+.col-text h2 {
   font-size: 6vw;
   text-align: center;
   padding: 1em;
 }
 
-.col-text h3{
+.col-text h3 {
   font-size: 8vw;
   text-align: center;
   padding: 1em;
@@ -46,10 +46,19 @@ main {
 }
 
 .filaReview {
-
+  display: flex;
+  justify-content: space-around;
   padding: 1.2em;
-
 }
+
+#reviews-title {
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+}
+
+
+
 
 .imagenReview {
 
@@ -65,10 +74,11 @@ main {
 
 }
 
+
 .textoReview {
 
   padding: 5px;
-  max-width: 800px;
+  width: 550px;
 }
 
 #imagenReview1 {
@@ -93,30 +103,31 @@ main {
 
 }
 
-@media (min-width:600px){
-  .col-text h2{
+@media (min-width:600px) {
+  .col-text h2 {
     font-size: 1.5em;
     text-align: center;
     padding: 1em;
   }
-  
-  .col-text h3{
+
+  .col-text h3 {
     font-size: 2em;
     text-align: center;
     padding: 1em;
   }
 }
 
-@media (min-width:800px){
-  #carouselExampleIndicators{
+@media (min-width:800px) {
+  #carouselExampleIndicators {
     max-height: 670px;
   }
-  .carousel-inner{
+
+  .carousel-inner {
     max-height: 670px;
   }
 }
 
-@media (min-width:1486px){
+@media (min-width:1486px) {
   .col-text {
     margin: 2em 8em;
   }
