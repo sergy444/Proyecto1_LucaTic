@@ -1,5 +1,5 @@
 main {
-  background-image: url("../img/contacto/pacman.jpg");
+  background: linear-gradient(45deg, rgb(13, 17, 24, 0.9) 0%, rgb(8, 23, 61, 0.9) 35%, rgb(10, 13, 19, 0.9) 100%), url("../img/contacto/pacman.jpg");
 }
 
 input {
@@ -9,10 +9,24 @@ input {
   background-color: rgba(0, 0, 0, 0);
 }
 
+input.wide {
+  width: 100%;
+}
+
+iframe {
+  margin: 2em;
+  min-width: 80%;
+  min-height: 40vw;
+}
+
 textarea {
-  resize: none !important;
-  overflow-y: auto;
+  overflow-x: auto;
   color: black;
+  max-width: 95%;
+}
+
+h2{
+  font-size: 4vh !important;
 }
 
 h2,
@@ -26,7 +40,12 @@ label {
   border: 1px solid black !important;
 }
 
+.container{
+  flex-wrap: wrap;
+}
+
 .form-container {
+  max-width: 95%;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 6px;
   margin: 30px;

@@ -110,6 +110,10 @@ ul.d-flex.flex-column {
     color: rgb(233, 249, 255);
 }
 
+.idioma {
+    display: flex;
+    gap: 20px;
+}
 .navbar img {
 
     align-self: flex-start;
