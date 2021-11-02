@@ -1,0 +1,40 @@
+main {
+  background-image: url("../img/contacto/pacman.jpg");
+}
+
+form {
+  background-color: white;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+textarea {
+  resize: none !important;
+  overflow-y: auto;
+  color: black;
+}
+
+.btn {
+  background-color: lightgray !important;
+  border: 1px solid black !important;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 12px;
+  margin: 30px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+h2,
+label {
+  color: black;
+  display: block !important;
+}
