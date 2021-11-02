@@ -17,7 +17,7 @@ h2{
 }
 
 .img-noticia{
-    padding: 10rem 20rem; 
+    padding: 18vw 30vw; 
 }
 
 .img-noticia.img-1{
@@ -60,6 +60,8 @@ h2{
     padding: 0.5em 0em;
 }
 
-
-
-
+@media (min-width:724px){
+    .img-noticia{
+        padding: 10rem 20rem; 
+    }
+}
