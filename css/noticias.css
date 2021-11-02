@@ -10,9 +10,9 @@ h4 {
 }
 
 p {
-    font-size: 3vh;
+    font-size: 2.7vh;
     text-align: justify;
-    padding: 0.5em 0em;
+    padding: 0.5em 1em;
 }
 
 .container-noticia {
@@ -25,6 +25,7 @@ p {
 
 .img-noticia {
     padding: 18vw 30vw;
+    margin-top: 2em;
 }
 
 .img-noticia.img-1 {
