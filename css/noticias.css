@@ -1,14 +1,24 @@
 main {
     background-color: rgb(20, 25, 35);
     font-size: 3vh;
-  }
+}
 
-h2{
+h2 {
     text-align: center;
     padding: 3em 1em;
 }
 
-.container-noticia{
+h3,
+h4 {
+    padding: 1em 0em;
+}
+
+p {
+    text-align: justify;
+    padding: 0.5em 0em;
+}
+
+.container-noticia {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -16,29 +26,29 @@ h2{
     margin: 0 auto;
 }
 
-.img-noticia{
-    padding: 18vw 30vw; 
+.img-noticia {
+    padding: 18vw 30vw;
 }
 
-.img-noticia.img-1{
+.img-noticia.img-1 {
     background-image: url("../img/noticias/unmetal.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.img-noticia.img-2{
+.img-noticia.img-2 {
     background-image: url("../img/noticias/resident-evil-revelations-hd.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.img-noticia.img-3{
+.img-noticia.img-3 {
     background-image: url("../img/noticias/alien-isolation.jpg");
-    background-position:bottom;
+    background-position: bottom;
     background-size: cover;
 }
 
-.noticia{
+.noticia {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -51,17 +61,8 @@ h2{
     margin: 1em auto;
 }
 
-.noticia h3, h4{
-    padding: 1em 0em;
-}
-
-.noticia p{
-    text-align: justify;
-    padding: 0.5em 0em;
-}
-
-@media (min-width:724px){
-    .img-noticia{
-        padding: 10rem 20rem; 
+@media (min-width:724px) {
+    .img-noticia {
+        padding: 10rem 20rem;
     }
 }
