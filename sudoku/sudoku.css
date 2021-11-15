@@ -7,13 +7,30 @@
 main {
     background-color: rgb(20, 25, 35);
     background: linear-gradient(45deg, rgb(13, 17, 24) 0%, rgb(8, 23, 61) 35%, rgb(10, 13, 19) 100%);
+    height: 100vh;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 input {
     background-color: rgb(35, 40, 42);
     text-align: center;
-    width: 100%;
+    width: 50px;
     height: 50px;
+    caret-color: transparent;
 }
 
 input::-webkit-outer-spin-button,
@@ -26,27 +43,109 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-div.col {
+main div.col {
     padding: 0px !important;
     margin: 0px !important;
-    width: 10px;
-    background-color: rgb(35, 40, 42);
+    width: 50px !important;
 }
 
-div.row {   
-    margin: 0 auto;
+main div.row {
+    margin: 0 auto !important;
+    width: 458px;
 }
 
-div.row .border_right {
-    border-right: solid 8px grey;
+main div.row .border_right {
+    border-right: solid 4px grey;
 }
-div.row.border_bottom {
-    border-bottom: solid 8px grey
+
+main div.row.border_bottom {
+    border-bottom: solid 4px grey
 }
-div.container {
+
+main div.container {
     margin: 0 auto !important;
     padding: 2em;
     width: 40%;
 }
 
+main a {
+    text-decoration: none;
+    color: unset;
+}
 
+ul {
+    list-style-type: none;
+}
+
+input.nombre {
+    margin: 8px;
+    color: aliceblue;
+    background-color: rgb(35, 40, 42);
+    width: 180px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    height: 36px;
+}
+
+select,
+option {
+    margin: 8px;
+    color: aliceblue;
+    background-color: rgb(35, 40, 42);
+    width: 180px;
+    border-radius: 1rem;
+    padding: 2px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    height: 36px;
+}
+
+button.btn {
+    margin: 8px;
+    color: aliceblue;
+    background-color: rgb(35, 40, 42);
+    width: 180px;
+    border-radius: 1rem;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    height: 36px;
+}
+
+button.btn:hover {
+    background-color: rgb(30, 18, 71);
+    color: aliceblue;
+}
+
+.pantalla {
+    height: 100%;
+    min-width: 100%;
+}
+
+.pant-inicial {
+    width: 800px;
+    height: 600px;
+    transition: transform .8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 400px);
+    /*transform: translateX(-100%);*/
+}
+
+.pant-sudoku {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 800px;
+    height: 600px;
+    transition: transform .8s ease-in-out;
+    font-size: 3.5vh;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 400px);
+    transform: translateX(-100%);
+}

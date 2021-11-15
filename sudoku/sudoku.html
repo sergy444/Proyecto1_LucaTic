@@ -61,111 +61,124 @@
     <!--MAIN-->
 
     <main>
-        <h2>Lechon Sudoku</h2>
-        <div class="container">
-            <p>Cronómetro</p>
-            <div class="row">
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                
+        <div class="container pantalla">
+            <!-- Menu de iniciar el Sudoku -->
+            <div class="pantalla">
+                <div class="pant-inicial">
+                    <input type="text" placeholder="Tu nombre" class="nombre">
+                    <select name="dificultad" id="dificultad">
+                        <option value="1">Fácil</option>
+                        <option value="2">Medio</option>
+                        <option value="3">Díficil</option>
+                    </select>
+                    <button class="btn" id="btn-new">Nuevo Juego</button>
+                </div>
             </div>
-            <div class="row">
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-            </div>
-            <div class="row border_bottom">
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-            </div>
-            <div class="row">
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-            </div>
-            <div class="row">
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-            </div>
-            <div class="row border_bottom">
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-            </div>
-            <div class="row">
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-            </div>
-            <div class="row">
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-            </div>
-            <div class="row">
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col border_right"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
-                <div class="col"><input type="number"></div>
+            <!-- Cuadricula del Sudoku -->
+            <div class="pant-sudoku">
+                <p>Cronómetro</p>
+                <div class="row">
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+
+                </div>
+                <div class="row">
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                </div>
+                <div class="row border_bottom">
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                </div>
+                <div class="row border_bottom">
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col border_right"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                    <div class="col"><input type="number"></div>
+                </div>
             </div>
         </div>
-
     </main>
 
 
