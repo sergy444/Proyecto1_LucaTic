@@ -1,5 +1,5 @@
-class Usuario{
-    constructor(nombre,puntuacion){
+class Usuario {
+    constructor(nombre, puntuacion) {
         this.nombre = nombre;
         this.puntuacion = puntuacion;
     }
