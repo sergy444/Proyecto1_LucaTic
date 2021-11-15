@@ -13,14 +13,15 @@ let find = fetch(`https://pokeapi.co/api/v2/pokemon/${randNum}`).then(response =
   pokeName = data.name
   pokeId = data.id
   sprite = data.sprites.other["official-artwork"].front_default
-  console.log(data, data.types)
+  types = data.types
+  console.log(data)
 })
 let findLegendary = fetch(`https://pokeapi.co/api/v2/pokemon-species/${randNum}`).then(response => response.json()).then(data => isLegendary = data.is_legendary)
 
 
 const datosInicio = function () {
   setTimeout(() => {
-    console.log(pokeName, pokeId, sprite, isLegendary)
+    console.log(pokeName, pokeId, sprite, isLegendary, types)
   }, 1000)
 }
 datosInicio()
