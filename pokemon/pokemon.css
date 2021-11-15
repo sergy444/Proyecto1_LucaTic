@@ -6,10 +6,20 @@ main {
 }
 
 
+#boton-comenzar{
+max-width: 10em;
+align-self: center;
+
+}
+#seleccion p{
+    text-align: center;
+    margin: auto;
+}
 
 #seleccion{
-    
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 
 }
 
@@ -21,4 +31,13 @@ main {
 #imagen-pokemon{
 
     filter: brightness(0);
+}
+
+#carta{
+    max-width: 70%;
+    margin: auto;
+}
+.hidden{
+
+    display: none;
 }
