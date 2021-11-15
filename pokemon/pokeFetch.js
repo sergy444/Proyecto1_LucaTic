@@ -24,3 +24,5 @@ const datosInicio = function () {
   }, 1000)
 }
 datosInicio()
+
+export {pokeName, pokeId, sprite, isLegendary};
