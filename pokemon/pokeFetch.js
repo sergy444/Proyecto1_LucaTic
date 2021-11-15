@@ -4,7 +4,7 @@ function traerPokemon() {
     /*Creates random number for pokemon selection*/
     let randNum = Math.floor((Math.random() * 901))
     console.log(randNum)
-    let pokeName, pokeId, sprite, isLegendary;
+    let pokeName, pokeId, sprite, isLegendary, types;
 
     // console.log(`https://pokeapi.co/api/v2/pokemon/${randNum}`)
 
