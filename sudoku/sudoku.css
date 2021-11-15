@@ -1,0 +1,45 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    background-color: rgb(20, 25, 35);
+    background: linear-gradient(45deg, rgb(13, 17, 24) 0%, rgb(8, 23, 61) 35%, rgb(10, 13, 19) 100%);
+}
+
+input {
+    background-color: rgb(35, 40, 42);
+    height: 1.4em;
+    width: 1.4em;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+div.col {
+    border: 1.3px solid black;
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: rgb(35, 40, 42);
+}
+
+div.row {
+    margin: 0 auto;
+}
+
+div.container {
+    margin: 0 auto !important;
+    padding: 2em;
+}
