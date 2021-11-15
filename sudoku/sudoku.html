@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/style-general.css" />
-    <link rel="stylesheet" href="../../css/proyectos-detalle.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="icon" type="image/svg+xml"
-    href="https://img.icons8.com/external-photo3ideastudio-gradient-photo3ideastudio/64/000000/external-pig-food-delivery-photo3ideastudio-gradient-photo3ideastudio.png">
-	<link type="text/plain" rel="author" href="../human.txt" />
-    <title>Proyectos - Metal Wolf</title>
+    <link rel="stylesheet" href="sudoku.css">
+    <link rel="stylesheet" href="../css/style-general.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
 </head>
 
 <body>
@@ -21,27 +17,23 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar">
-                        <img src="https://img.icons8.com/external-photo3ideastudio-gradient-photo3ideastudio/64/000000/external-pig-food-delivery-photo3ideastudio-gradient-photo3ideastudio.png"
-                            alt="LechonGames icono 2021" title="logo" />
+                        <img src="https://img.icons8.com/external-photo3ideastudio-gradient-photo3ideastudio/64/000000/external-pig-food-delivery-photo3ideastudio-gradient-photo3ideastudio.png" alt="LechonGames icono 2021" title="logo" />
                         <h1>
                             LechonGames
                         </h1>
                         <ul class="d-none d-md-flex">
-                            <li class="nav-link"><a href="../index.html">Home</a></li>
-                            <li class="nav-link"><a href="../proyectos.html">Proyectos</a></li>
-                            <li class="nav-link"><a href="../noticias.html">Noticias</a></li>
-                            <li class="nav-link"><a href="../equipo.html">Equipo</a></li>
-                            <li class="nav-link"><a href="../contacto.html">Contacto</a></li>
+                            <li class="nav-link"><a href="index.html">Home</a></li>
+                            <li class="nav-link"><a href="proyectos.html">Proyectos</a></li>
+                            <li class="nav-link"><a href="noticias.html">Noticias</a></li>
+                            <li class="nav-link"><a href="equipo.html">Equipo</a></li>
+                            <li class="nav-link"><a href="contacto.html">Contacto</a></li>
                         </ul>
                         <div class="idioma">
-                            <a href="../../EN/projects-detail/projects-detail-MetalWolf.html">ES/EN</a>
-                            <img src="../../img/espana.png" alt="Bandera de españa">
-                          </div>
+                            <a href="../EN/news.html">ES/EN</a>
+                            <img src="../img/espana.png" alt="Bandera de España">
+                        </div>
                         <div class="d-md-none d-flex flex-column">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarToggleExternalContent"
-                                aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="25"
                                         height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -51,11 +43,11 @@
                             <div class="collapse" id="navbarToggleExternalContent">
                                 <div class="bg-custom p-4">
                                     <ul class="d-flex flex-column">
-                                        <li class="nav-link"><a href="../index.html">Home</a></li>
-                                        <li class="nav-link"><a href="../proyectos.html">Proyectos</a></li>
-                                        <li class="nav-link"><a href="../noticias.html">Noticias</a></li>
-                                        <li class="nav-link"><a href="../equipo.html">Equipo</a></li>
-                                        <li class="nav-link"><a href="../contacto.html">Contacto</a></li>
+                                        <li class="nav-link"><a href="index.html">Home</a></li>
+                                        <li class="nav-link"><a href="proyectos.html">Proyectos</a></li>
+                                        <li class="nav-link"><a href="noticias.html">Noticias</a></li>
+                                        <li class="nav-link"><a href="equipo.html">Equipo</a></li>
+                                        <li class="nav-link"><a href="contacto.html">Contacto</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -65,52 +57,116 @@
             </div>
         </div>
     </header>
+
+    <!--MAIN-->
+
     <main>
-        <div class="row fila">
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 infoProyecto">
-
-                <img src="../../img/proyectos/metal-wolf-chaos-xd.jpg" alt="meca destruyendo avión."
-                    title="metal wolf chaos xd">
-
+        <div class="container">
+            <div class="row">
+                <div class="col"><input type="number"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
             </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 infoProyecto">
-
-                <ul>
-                    <li>Nombre: Metal Wolf Chaos XD</li>
-                    <li>Fecha de Lanzamiento: 6 de Agosto de 2018</li>
-                    <li>Desarrollador: FromSoftware</li>
-                    <li>Modos de Juego: Un jugador</li>
-                    <li>Géneros: Acción</li>
-                </ul>
-
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
             </div>
-        </div>
-        <div class="row fila">
-
-            <div class="col-12 textoProyecto">
-                <p>El país está en peligro y el presidente Michael Wilson debe defender la nación contra la rebelión a
-                    gran escala liderada por el vicepresidente Richard Hawk y las legiones mecanizadas que tiene a sus
-                    órdenes. Como 47.º presidente de Estados Unidos, es tu deber recuperar tu país por todos los medios
-                    necesarios y poner fin a este injusto golpe de Estado. Combate a los mandos de tu meca avanzado —y
-                    armado hasta los dientes— por emblemáticos paisajes estadounidenses como el puente de Brooklyn, el
-                    Gran Cañón y los escalones de la Casa Blanca.</p>
-
-                <p>FromSoftware lanzó originalmente Metal Wolf Chaos en diciembre de 2004, exclusivamente en Japón. El
-                    juego pasó a ser una especie de leyenda, ya que era difícil de adquirir y aún más difícil de jugar
-                    fuera de Japón, y la mayoría de los fans lo experimentaron a través de vídeos y alguna que otra
-                    captura de pantalla. Devolver Digital y FromSoftware se han asociado con la desarrolladora General
-                    Arcade para modernizar Metal Wolf Chaos con actualizaciones del juego como una mayor fidelidad
-                    visual, ajustes en los controles y las mecánicas de juego, un nuevo sistema para guardar partidas y
-                    compatibilidad con 4K + 16:9 para las pantallas modernas.</p>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
             </div>
         </div>
 
     </main>
 
-    <footer>
 
+    <footer>
         <!-- clase para que el footer ocupe toda la pantalla -->
         <div class="row">
             <div class="col-12 flexFooter">
@@ -119,9 +175,9 @@
                 </div>
                 <div class="redesFooter">
                     <ul>
-                        <li><a href="https://www.tomorrowtides.com/lechon-games-blog.html" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4vh" height="auto"
-                                    viewBox="0 0 172 172" style=" fill:#000000;" class="twitter">
+                        <li>
+                            <a href="https://www.tomorrowtides.com/lechon-games-blog.html" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4vh" length="auto" viewBox="0 0 172 172" style=" fill:#000000;" class="twitter">
                                     <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
                                         stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
                                         stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none"
@@ -134,10 +190,11 @@
                                         </g>
                                     </g>
                                 </svg>
-                            </a></li>
-                        <li><a href="https://www.tomorrowtides.com/lechon-games-blog.html" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4vh" height="auto"
-                                    viewBox="0 0 172 172" style=" fill:#000000;" class="youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tomorrowtides.com/lechon-games-blog.html" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4vh" length="auto" viewBox="0 0 172 172" style=" fill:#000000;" class="youtube">
                                     <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
                                         stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
                                         stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none"
@@ -150,10 +207,11 @@
                                         </g>
                                     </g>
                                 </svg>
-                            </a></li>
-                        <li><a href="https://www.tomorrowtides.com/lechon-games-blog.html" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4vh" height="auto"
-                                    viewBox="0 0 172 172" style=" fill:#000000;" class="github">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tomorrowtides.com/lechon-games-blog.html" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4vh" length="auto" viewBox="0 0 172 172" style=" fill:#000000;" class="github">
                                     <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
                                         stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
                                         stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none"
@@ -166,10 +224,11 @@
                                         </g>
                                     </g>
                                 </svg>
-                            </a></li>
-                        <li><a href="https://www.tomorrowtides.com/lechon-games-blog.html" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4vh" height="auto"
-                                    viewBox="0 0 172 172" style=" fill:#000000;" class="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tomorrowtides.com/lechon-games-blog.html" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="4vh" length="auto" viewBox="0 0 172 172" style=" fill:#000000;" class="facebook">
                                     <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
                                         stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
                                         stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none"
@@ -182,15 +241,13 @@
                                         </g>
                                     </g>
                                 </svg>
-                            </a></li>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
