@@ -1,10 +1,11 @@
 import {traerPokemon} from "../pokemon/pokeFetch.js";
 
 function cargarJuego(){
+    console.log("hola")
     //escondo el contenedor de la primera página
-    document.getElementById().classList.add("hidden");
+    document.getElementById("seleccion").classList.add("hidden");
     //muestro el contenedor de la segunda página
-    document.getElementById().classList.remove("hidden");
+    document.getElementById("juego").classList.remove("hidden");
 
     traerPokemon();
 
@@ -14,7 +15,7 @@ function cargarJuego(){
 }
 
 //añadimos al botón de comenzar la función para cargar el juego
-let cargar = document.getElementsById("boton-comenzar");
+let cargar = document.getElementById("boton-comenzar");
 cargar.addEventListener("click",cargarJuego);
 
 console.log(traerPokemon());
