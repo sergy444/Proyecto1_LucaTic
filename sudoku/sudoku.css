@@ -134,7 +134,6 @@ button.btn:hover {
     position: absolute;
     top: 50px;
     left: calc(50% - 400px);
-    /*transform: translateX(-150%);*/
 }
 
 .pant-sudoku {
@@ -147,5 +146,28 @@ button.btn:hover {
     position: absolute;
     top: 50px;
     left: calc(50% - 400px);
+}
+
+.trans {
     transform: translateX(-150%);
+}
+
+.input-err {
+    border-color: rgb(255, 32, 69);
+    animation: bounce .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(15px);
+    }
+    50% {
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
