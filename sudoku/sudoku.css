@@ -134,7 +134,7 @@ button.btn:hover {
     position: absolute;
     top: 50px;
     left: calc(50% - 400px);
-    /*transform: translateX(-100%);*/
+    /*transform: translateX(-150%);*/
 }
 
 .pant-sudoku {
@@ -147,5 +147,5 @@ button.btn:hover {
     position: absolute;
     top: 50px;
     left: calc(50% - 400px);
-    transform: translateX(-100%);
+    transform: translateX(-150%);
 }
