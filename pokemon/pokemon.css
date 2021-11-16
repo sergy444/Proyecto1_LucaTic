@@ -1,0 +1,51 @@
+main {
+    background-color: rgb(20, 25, 35);
+    background: linear-gradient(45deg, rgb(13, 17, 24) 0%, rgb(8, 23, 61) 35%, rgb(10, 13, 19) 100%);
+    font-size: 3vh;
+    padding: 1em;
+}
+
+#boton-comenzar {
+    max-width: 10em;
+    align-self: center;
+}
+
+#boton-comenzar,
+#texto-carta,
+#titulo-carta,
+#boton-validar,
+#nombre-pokemon,
+#puntuacion {
+    color: rgb(1, 42, 58);
+}
+
+#carta {
+    max-width: 70%;
+    margin: auto;
+}
+
+#imagen-pokemon {
+    filter: brightness(0);
+}
+
+#nombre,
+label {
+    display: flex;
+    margin: auto;
+}
+
+#seleccion {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#seleccion p {
+    text-align: center;
+    padding-top: 1rem;
+    margin: auto;
+}
+
+.hidden {
+    display: none !important;
+}

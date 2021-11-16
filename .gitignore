@@ -1,2 +1,2 @@
-#ignora la carpeta node_modules
-node_modules
+#ignora los siguientes archivos
+node_modules/
