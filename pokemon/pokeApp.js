@@ -13,6 +13,8 @@ let valorNombre = '';
 let textoPista = document.querySelector("#texto-carta");
 
 let validar = document.querySelector("#boton-validar");
+let aciertosTexto = document.querySelector("#aciertos");
+let intentosTexto = document.querySelector("#intentos");
 
 
 let intentosRestantes = 3;
@@ -76,8 +78,12 @@ function cambiarPokemon() {
     traerPokemon();
     imgPokemon.classList.add("oculto");
     document.getElementById("nombre-pokemon").value = "";
+    document.getElementById("texto-carta").innerHTML = "";
 }
-
+function pintarEstadisticas(){
+    intentosTexto.innerHTML = `Intentos restantes: ${intentosRestantes}`;
+    aciertosTexto.innerHTML = `Aciertos: ${numRespuestaCorrecta}`;
+}
 function validarRespuesta() {
     //guardamos el valor que el usuario escribe en el imput
     valorNombre = document.querySelector("#nombre-pokemon").value;
@@ -96,9 +102,11 @@ function validarRespuesta() {
         setTimeout(()=>{
             cambiarPokemon();
         }, 1000);
+        aciertosTexto.innerHTML = `Aciertos: ${numRespuestaCorrecta}`;
     } else {
         window.alert("respuesta incorrecta");
         contarIntentos()
+        intentosTexto.innerHTML = `Intentos restantes: ${intentosRestantes}`;
     }
     console.log(numRespuestaCorrecta, intentosRestantes);
     mostrarScore()
@@ -143,7 +151,7 @@ function mostrarPista() {
 }
 
 
-
+pintarEstadisticas()
 
 //boton para crear un objeto de tipo usuario
 let newuser = document.getElementById("boton-comenzar");

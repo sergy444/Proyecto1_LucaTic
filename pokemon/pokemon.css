@@ -16,7 +16,8 @@ main {
 #boton-validar,
 #nombre-pokemon,
 #puntuacion,
-#boton-pista {
+#boton-pista,
+.puntuacionIntentos {
     color: rgb(1, 42, 58);
 }
 
@@ -58,7 +59,8 @@ label {
 
 .principal{
     display: flex;
-    height: 34.8rem;
+    
+    min-height: 34.8rem;
     align-items: center;
     justify-content: center;
     margin: auto;
