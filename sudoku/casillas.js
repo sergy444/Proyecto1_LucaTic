@@ -1,4 +1,5 @@
 let casillasArray = [];
+let casillas_count = 0;
 
 class Casilla {
     constructor(id, valor, resuelto, input) {
@@ -15,6 +16,13 @@ class Casilla {
     }
 }
 
+function casillas_counter(){
+    if (casillas_count === 81) {
+        console.log("You won")
+        clearInterval(start)
+    }
+}
+
 function rellenarSudoku(casillasArray) {
     let cas;
     for (let i = 0; i < 81; i++) {
@@ -23,18 +31,23 @@ function rellenarSudoku(casillasArray) {
 
         if (cas.value) {
             cas.disabled = true;
+            casillas_count++;
         }
 
         document.getElementById(casillasArray[i].id).addEventListener('blur', (e) => {
+            
             let casilla = casillasArray.filter(item => item.id === e.target.id)
             casilla[0].input = Number(e.target.value);
             
             if (casilla[0].esCorrecto()) {
                 e.target.disabled = true;
+                casillas_count++;
+                casillas_counter();
             } else {
                 console.log("Wrong")
             }
         });
+
     }
 }
 
