@@ -1,7 +1,7 @@
+let start;
 let count = 0;
 
 function cronometro() {
-    let start;
     let crono = document.getElementById('cronometro');
 
     function mostrarTiempo() {
