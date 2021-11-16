@@ -41,3 +41,5 @@ newuser.addEventListener("click", crearUsuario);
 //añadimos al boton de validar la funcion para validar la respuesta
 let validar = document.querySelector("#boton-validar");
 validar.addEventListener("click", validarRespuesta);
+
+export {validarRespuesta};
