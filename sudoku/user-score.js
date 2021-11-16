@@ -12,7 +12,7 @@ class userScore {
 function getScore() {
     let dificultad = (document.querySelector('#dificultad').value) / 2;
     let tiempo = count;
-    let score = 10000 * dificultad / tiempo;
+    let score = 30000 * dificultad / tiempo;
     return score.toFixed(0);
 }
 
