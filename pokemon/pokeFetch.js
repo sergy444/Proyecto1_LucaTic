@@ -50,7 +50,7 @@ function cargarJuego() {
   juego.classList.remove("hidden");
 
   traerPokemon();
-
+  
 }
 
 //añadimos al botón de comenzar la función para cargar el juego
