@@ -95,4 +95,3 @@ function setDificultad(n1) {
 }
 
 let setSudoku = new Sudoku(setDificultad(dificultad))
-export default setSudoku;
