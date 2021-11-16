@@ -16,10 +16,12 @@ class Casilla {
     }
 }
 
-function sudoku_terminado(){
+function sudoku_terminado() {
     if (casillas_count === 81) {
         console.log("You won")
         clearInterval(start)
+        btnVerHighscore.classList.remove('trans');
+        imprScore();
     }
 }
 
@@ -35,16 +37,20 @@ function rellenarSudoku(casillasArray) {
         }
 
         document.getElementById(casillasArray[i].id).addEventListener('blur', (e) => {
-            
+
             let casilla = casillasArray.filter(item => item.id === e.target.id)
             casilla[0].input = Number(e.target.value);
-            
+
             if (casilla[0].esCorrecto()) {
                 e.target.disabled = true;
                 casillas_count++;
                 sudoku_terminado();
             } else {
-                console.log("Wrong")
+                e.target.classList.add('input-err2');
+                setTimeout(() => {
+                    e.target.classList.remove('input-err2');
+                    nombre.focus();
+                }, 500);
             }
         });
 

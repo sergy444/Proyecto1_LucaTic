@@ -26,6 +26,9 @@ footer {
 
 h2 {
     font-size: 3rem !important;
+}
+
+.pant-score h2 {
     margin-left: 3.5vh;
 }
 
@@ -130,6 +133,7 @@ option {
 }
 
 button.btn {
+    transition: transform .8s ease-in-out;
     margin: 8px;
     color: aliceblue;
     background-color: rgb(35, 40, 42);
@@ -189,7 +193,7 @@ button.btn:hover {
 }
 
 .trans {
-    transform: translateX(-150%);
+    transform: translateX(-2000%);
 }
 
 .input-err {
@@ -202,13 +206,33 @@ button.btn:hover {
         transform: translateX(0);
     }
     25% {
-        transform: translateX(15px);
+        transform: translatex(15px);
     }
     50% {
         transform: translateX(-15px);
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+.input-err2 {
+    border-color: rgb(255, 32, 69);
+    animation: bounce2 .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
