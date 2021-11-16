@@ -1,6 +1,7 @@
 const nombre = document.querySelector('.nombre');
-const pantInicial = document.querySelector('.pant-inicial')
-const pantSudoku = document.querySelector('.pant-sudoku')
+const pantInicial = document.querySelector('.pant-inicial');
+const pantSudoku = document.querySelector('.pant-sudoku');
+
 
 document.querySelector('#btn-new').addEventListener('click', () => {
     if (nombre.value.trim().length > 0) {
