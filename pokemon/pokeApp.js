@@ -65,3 +65,4 @@ newuser.addEventListener("click", crearUsuario);
 
 //añadimos al boton de validar la funcion para validar la respuesta
 validar.addEventListener("click", validarRespuesta);
+
