@@ -1,6 +1,5 @@
 let start;
 let count = 0;
-let start;
 
 function cronometro() {
     let crono = document.getElementById('cronometro');
