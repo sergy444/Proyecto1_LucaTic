@@ -6,12 +6,14 @@
 
     //guardamos en una variable el tag de la imagen vacío
     let imgPokemon = document.getElementById("imagen-pokemon");
+    //definimos variables para el uso del fetch
+    let pokeName, pokeId, sprite, isLegendary, types;
 
 function traerPokemon() {
     /*Creates random number for pokemon selection*/
     let randNum = Math.floor((Math.random() * 901))
     console.log(randNum)
-    let pokeName, pokeId, sprite, isLegendary, types;
+    
 
     // console.log(`https://pokeapi.co/api/v2/pokemon/${randNum}`)
 
@@ -48,6 +50,21 @@ function cargarJuego(){
 
 }
 
+function validarRespuesta() {
+    //guardamos el valor que el usuario escribe en el imput
+    let valorNombre = document.querySelector("#nombre-pokemon").value;
+    //comparamos el valor que pone el usuario con la variable que guarda el nombre del pokemon actual
+        if (valorNombre == pokeName) {
+            window.alert("respuesta correcta");
+        } else {
+            window.alert("respuesta incorrecta");
+        }
+    }
+
 //añadimos al botón de comenzar la función para cargar el juego
 let cargar = document.getElementById("boton-comenzar");
 cargar.addEventListener("click",cargarJuego);
+
+//añadimos al boton de validar la funcion para validar la respuesta
+let validar = document.querySelector("#boton-validar");
+validar.addEventListener("click",validarRespuesta);
