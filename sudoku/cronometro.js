@@ -1,3 +1,4 @@
+let start;
 let count = 0;
 let start;
 

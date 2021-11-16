@@ -16,7 +16,7 @@ class Casilla {
     }
 }
 
-function casillas_counter(){
+function sudoku_terminado(){
     if (casillas_count === 81) {
         console.log("You won")
         clearInterval(start)
@@ -42,7 +42,7 @@ function rellenarSudoku(casillasArray) {
             if (casilla[0].esCorrecto()) {
                 e.target.disabled = true;
                 casillas_count++;
-                casillas_counter();
+                sudoku_terminado();
             } else {
                 console.log("Wrong")
             }
