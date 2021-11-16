@@ -55,3 +55,11 @@ label {
 .oculto {
     filter: brightness(0);
 }
+
+.principal{
+    display: flex;
+    height: 34.8rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
