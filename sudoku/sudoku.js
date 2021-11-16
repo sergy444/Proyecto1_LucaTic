@@ -46,7 +46,7 @@ let sudokuIntervacio = {
     i: [0, 0, 5, 0, 2, 6, 4, 0, 8]
 }
 
-let sudokuDifficil = {
+let sudokuDificil = {
     a: [6, 5, 9, 2, 3, 4, 1, 8, 7],
     b: [2, 4, 8, 1, 5, 7, 6, 3, 9],
     c: [7, 3, 1, 9, 6, 8, 2, 4, 5],
@@ -58,7 +58,7 @@ let sudokuDifficil = {
     i: [3, 6, 4, 5, 7, 9, 8, 1, 2]
 }
 
-let sudokuDifficilVacio = {
+let sudokuDificilVacio = {
     a: [0, 5, 0, 2, 0, 4, 0, 0, 7],
     b: [0, 0, 8, 0, 0, 0, 6, 3, 0],
     c: [7, 3, 0, 0, 0, 8, 2, 0, 5],
@@ -68,4 +68,22 @@ let sudokuDifficilVacio = {
     g: [0, 0, 0, 0, 0, 0, 5, 6, 0],
     h: [0, 2, 0, 0, 0, 0, 0, 0, 0],
     i: [3, 0, 0, 5, 0, 9, 8, 0, 0]
+}
+
+let sudoku = sudokuInter;
+let sudokuVacio = sudokuIntervacio;
+let dificultad = document.querySelector('#dificultad').value
+switch (dificultad) {
+    case 1:
+        sudoku = sudokuFacil;
+        sudokuVacio = sudokuFacilVacio;
+        break;
+    case 2:
+        sudoku = sudokuInter;
+        sudokuVacio = sudokuIntervacio;
+        break;
+    case 3:
+        sudoku = sudokuDificil;
+        sudokuVacio = sudokuDificilVacio;
+        break;
 }
