@@ -5,20 +5,33 @@ main {
     padding: 1em;
 }
 
+#boton-comenzar, #boton-validar, #boton-pista{
+    color: aliceblue;
+    background-color: rgb(35, 40, 42);
+    width: 190px;
+    border-radius: 1rem;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+#boton-comenzar:hover, #boton-validar:hover, #boton-pista:hover{
+    background-color: rgb(30, 18, 71);
+    color: aliceblue;
+}
+
 #boton-comenzar {
     max-width: 10em;
     align-self: center;
 }
 
-#boton-comenzar,
+
 #texto-carta,
 #titulo-carta,
-#boton-validar,
 #nombre-pokemon,
 #puntuacion,
-#boton-pista,
 .puntuacionIntentos {
-    color: rgb(1, 42, 58);
+    color: aliceblue;
 }
 
 #boton-validar, #boton-pista{
@@ -30,6 +43,8 @@ main {
     flex-wrap: wrap;
     max-width: 17rem;
     margin: auto;
+    background-color: rgb(35, 40, 42);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 }
 
 #intentos{
@@ -37,13 +52,23 @@ main {
 }
 
 #aciertos{
-    color: rgb(75, 119, 75);
+    color: rgb(110, 172, 110);
 }
 
 #nombre,
 label {
     display: flex;
     margin: auto;
+}
+
+#nombre, #nombre-pokemon{
+    color: aliceblue;
+    background-color: rgb(35, 40, 42);
+    width: 210px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    border-color: silver;
 }
 
 #seleccion {
