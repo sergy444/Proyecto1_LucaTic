@@ -12,7 +12,10 @@
 	<link rel="icon" type="image/svg+xml"
 		href="https://img.icons8.com/external-photo3ideastudio-gradient-photo3ideastudio/64/000000/external-pig-food-delivery-photo3ideastudio-gradient-photo3ideastudio.png">
 	<link type="text/plain" rel="author" href="../human.txt" />
-	<title>LechonGames - Contacto</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<title>Adivina el Pokémon</title>
 </head>
 
 <body>
@@ -64,9 +67,34 @@
 		</div>
 	</header>
 	<main>
-
-		
-
+		<div class="row">
+			<div class="col-12 principal">
+				<div id="seleccion">
+					<h2>Who´s That Pokemon</h2>
+					<label for="nombre">Dinos tu nombre:
+						<input type="text" name="nombre" id="nombre">
+					</label>
+					<p>Pulsa el botón para comenzar</p><br>
+					<input type="button" value="¡Comenzar!" id="boton-comenzar">
+				</div>
+				<div id="juego" class="hidden">
+					<div class="card" id="carta">
+						<img class="card-img-top oculto" alt="Card image cap" id="imagen-pokemon">
+						<div class="card-body">
+							<h4 class="card-title" id="titulo-carta">Adivina el Pokémon</h4>
+							<p class="card-text" id="texto-carta">								
+							</p>
+							<p class="puntuacionIntentos" id="intentos"></p>
+							<p class="puntuacionIntentos" id="aciertos"></p>
+							<input type="text" name="nombre-pokemon" id="nombre-pokemon">
+							<input type="button" value="Validar respuesta" id="boton-validar">
+							<input type="button" value="Mostrar pista" id="boton-pista">
+						</div>
+					</div>
+				</div>
+				<div id="puntuacion" class="hidden"></div>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<div class="row">
@@ -149,8 +177,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 	</script>
-<script src="../pokemon/pokeFetch.js"></script>
-<script src="../pokemon/pokeApp.js"></script>
+	<script type="module" src="../pokemon/pokeFetch.js"></script>
+	<script type="module" src="../pokemon/pokeApp.js"></script>
 </body>
 
 </html>
