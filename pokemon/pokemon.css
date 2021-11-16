@@ -1,11 +1,32 @@
 main {
     background-color: rgb(20, 25, 35);
     background: linear-gradient(45deg, rgb(13, 17, 24) 0%, rgb(8, 23, 61) 35%, rgb(10, 13, 19) 100%);
-    font-size: 3vh;
-    padding: 1em;
+    height: 100vh;
+    overflow-x: hidden;
+    user-select: none;
 }
 
-#boton-comenzar, #boton-validar, #boton-pista{
+
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+#boton-comenzar,
+#boton-validar,
+#boton-pista {
     color: aliceblue;
     background-color: rgb(35, 40, 42);
     width: 190px;
@@ -15,7 +36,9 @@ main {
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 }
 
-#boton-comenzar:hover, #boton-validar:hover, #boton-pista:hover{
+#boton-comenzar:hover,
+#boton-validar:hover,
+#boton-pista:hover {
     background-color: rgb(30, 18, 71);
     color: aliceblue;
 }
@@ -34,24 +57,28 @@ main {
     color: aliceblue;
 }
 
-#boton-validar, #boton-pista{
+#boton-validar,
+#boton-pista {
     margin-top: 1rem;
 }
 
 #carta {
+    margin-top: 11.5vh !important;
     display: flex;
     flex-wrap: wrap;
-    max-width: 17rem;
+    max-width: 27rem;
     margin: auto;
     background-color: rgb(35, 40, 42);
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem;
 }
 
-#intentos{
-    color:rgb(182, 133, 59)
+#intentos {
+    color: rgb(182, 133, 59)
 }
 
-#aciertos{
+#aciertos {
     color: rgb(110, 172, 110);
 }
 
@@ -61,7 +88,8 @@ label {
     margin: auto;
 }
 
-#nombre, #nombre-pokemon{
+#nombre,
+#nombre-pokemon {
     color: aliceblue;
     background-color: rgb(35, 40, 42);
     width: 210px;
@@ -77,7 +105,7 @@ label {
     margin: auto;
 }
 
-#seleccion h2{
+#seleccion h2 {
     font-family: 'Bangers', cursive;
 }
 
@@ -95,11 +123,23 @@ label {
     filter: brightness(0);
 }
 
-.principal{
+.principal {
     display: flex;
-    
     min-height: 34.8rem;
     align-items: center;
     justify-content: center;
     margin: auto;
+}
+@media all and (max-width: 650px) {
+    #carta {
+        margin-top: 11.5vh !important;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 18rem;
+        margin: auto;
+        background-color: rgb(35, 40, 42);
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+        text-align: center;
+        padding: 1rem;
+    }
 }
