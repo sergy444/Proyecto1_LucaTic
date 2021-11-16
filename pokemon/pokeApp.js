@@ -22,12 +22,22 @@ let numRespuestaCorrecta = 0;
 let genPoke;
 
 function crearUsuario() {
+    //maria
+    if (nombre.value.trim().length > 0) {
+        //esto es lo que estaba dentro de crearUsuario que lo metí dentro del if
+            let nombreUsuario = document.getElementById("nombre").value;
+            let usuario = new Usuario(nombreUsuario, 0);
+            //Guarda el usuario creado en el localStorage para pedirlo luego 
+            localStorage.setItem("usuario", JSON.stringify(usuario))
 
-    let nombreUsuario = document.getElementById("nombre").value;
-    let usuario = new Usuario(nombreUsuario, 0);
-    //Guarda el usuario creado en el localStorage para pedirlo luego 
-    //-Joseba
-    localStorage.setItem("usuario", JSON.stringify(usuario))
+    } else {
+        nombre.classList.add('input-err');
+        setTimeout(() => {
+            nombre.classList.remove('input-err');
+            nombre.focus();
+        }, 500);
+    }
+    //aqui termina lo que modificó maria
 }
 const mostrarScore = function () {
     let usuario1 = JSON.parse(localStorage.getItem("usuario"))
