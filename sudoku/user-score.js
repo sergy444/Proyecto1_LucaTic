@@ -16,8 +16,6 @@ function getScore() {
     return score;
 }
 
-// primero crear el usuario antes de llamar a imprScore
-
 function imprScore() {
     getScore() = divScore.innerHTML;
 }
