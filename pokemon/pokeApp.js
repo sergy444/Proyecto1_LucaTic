@@ -4,9 +4,11 @@ import {
     isLegendary,
     types,
     pokeId,
-    imgPokemon
+    imgPokemon,
+    traerPokemon
 } from "./pokeFetch.js";
 
+let valorNombre = '';
 
 let textoPista = document.querySelector("#texto-carta");
 
@@ -47,8 +49,6 @@ const mostrarScore = function () {
 }
 
 
-
-
 //funcion para saber de que generacion es el pokemon
 function queGeneracion() {
     if (pokeId >= 1 && pokeId <= 151) {
@@ -71,9 +71,16 @@ function queGeneracion() {
     return genPoke;
 }
 
+//funcion para cambiar la silueta del pokemon
+function cambiarPokemon() {
+    traerPokemon();
+    imgPokemon.classList.add("oculto");
+    document.getElementById("nombre-pokemon").value = "";
+}
+
 function validarRespuesta() {
     //guardamos el valor que el usuario escribe en el imput
-    let valorNombre = document.querySelector("#nombre-pokemon").value;
+    valorNombre = document.querySelector("#nombre-pokemon").value;
     const sumarScore = function () {
         return numRespuestaCorrecta++
     }
@@ -86,6 +93,9 @@ function validarRespuesta() {
     if (valorNombre == pokeName) {
         window.alert("respuesta correcta");
         sumarScore()
+        setTimeout(()=>{
+            cambiarPokemon();
+        }, 1000);
     } else {
         window.alert("respuesta incorrecta");
         contarIntentos()
@@ -93,6 +103,7 @@ function validarRespuesta() {
     console.log(numRespuestaCorrecta, intentosRestantes);
     mostrarScore()
 }
+
 //funcion para que segun un num aleatorio imprima una pista en pantalla
 function mostrarPista() {
     let aleatorio = Math.floor((Math.random() * 5))
@@ -130,6 +141,10 @@ function mostrarPista() {
     }
 
 }
+
+
+
+
 //boton para crear un objeto de tipo usuario
 let newuser = document.getElementById("boton-comenzar");
 newuser.addEventListener("click", crearUsuario);

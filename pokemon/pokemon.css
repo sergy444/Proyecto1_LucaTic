@@ -15,12 +15,13 @@ main {
 #titulo-carta,
 #boton-validar,
 #nombre-pokemon,
-#puntuacion {
+#puntuacion,
+#boton-pista {
     color: rgb(1, 42, 58);
 }
 
 #carta {
-    max-width: 70%;
+    max-width: 25rem;
     margin: auto;
 }
 
