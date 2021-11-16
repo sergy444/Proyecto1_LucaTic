@@ -5,39 +5,47 @@ main {
     padding: 1em;
 }
 
-
-#boton-comenzar{
-max-width: 10em;
-align-self: center;
-
-}
-#seleccion p{
-    text-align: center;
-    margin: auto;
+#boton-comenzar {
+    max-width: 10em;
+    align-self: center;
 }
 
-#seleccion{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-
-}
-
-#boton-comenzar , #texto-carta , #titulo-carta, #boton-validar , #nombre-pokemon, #puntuacion{
-
+#boton-comenzar,
+#texto-carta,
+#titulo-carta,
+#boton-validar,
+#nombre-pokemon,
+#puntuacion {
     color: rgb(1, 42, 58);
 }
 
-#imagen-pokemon{
-
-    filter: brightness(0);
-}
-
-#carta{
+#carta {
     max-width: 70%;
     margin: auto;
 }
-.hidden{
 
+#imagen-pokemon {
+    filter: brightness(0);
+}
+
+#nombre,
+label {
+    display: flex;
+    margin: auto;
+}
+
+#seleccion {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#seleccion p {
+    text-align: center;
+    padding-top: 1rem;
+    margin: auto;
+}
+
+.hidden {
     display: none;
 }
