@@ -1,14 +1,14 @@
 main {
     background-color: rgb(20, 25, 35);
     background: linear-gradient(45deg, rgb(13, 17, 24) 0%, rgb(8, 23, 61) 35%, rgb(10, 13, 19) 100%);
-    font-size: 3vh;
+    font-size: 2.2vh;
     padding: 1em;
 }
 
 #boton-comenzar, #boton-validar, #boton-pista{
     color: aliceblue;
     background-color: rgb(35, 40, 42);
-    width: 190px;
+    width: 200px;
     border-radius: 1rem;
     padding: 5px;
     text-align: center;
@@ -41,10 +41,12 @@ main {
 #carta {
     display: flex;
     flex-wrap: wrap;
-    max-width: 17rem;
+    max-width: 27rem;
     margin: auto;
     background-color: rgb(35, 40, 42);
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem;
 }
 
 #intentos{
