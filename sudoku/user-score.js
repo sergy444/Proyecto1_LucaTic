@@ -33,3 +33,13 @@ function cargarUserScores() {
     let recuperarScore = localStorage.getItem('userScores');
     userScores = JSON.parse(recuperarScore);
 }
+
+function imprHighScore() {
+    let tablaHighScores = document.querySelector('#HighScore');
+    for (i = 0; i < userScores.length; i++) {
+        tablaHighScores.innerHTML += `<tr>
+        <td>${userScore[i].name}</td>
+        <td>${userScore[i].score}</td>
+    </tr>`
+    }
+}
