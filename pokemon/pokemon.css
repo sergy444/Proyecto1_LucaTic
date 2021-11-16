@@ -21,15 +21,24 @@ main {
     color: rgb(1, 42, 58);
 }
 
-#boton-validar{
+#boton-validar, #boton-pista{
     margin-top: 1rem;
 }
 
 #carta {
-    max-width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 17rem;
     margin: auto;
 }
 
+#intentos{
+    color:rgb(182, 133, 59)
+}
+
+#aciertos{
+    color: rgb(75, 119, 75);
+}
 
 #nombre,
 label {
@@ -41,6 +50,10 @@ label {
     display: flex;
     flex-direction: column;
     margin: auto;
+}
+
+#seleccion h2{
+    font-family: 'Bangers', cursive;
 }
 
 #seleccion p {
