@@ -14,15 +14,15 @@ class Usuario {
 }
 
 const highScores = [{
-        username: "Red",
-        score: 9999
+        nombre: "Red",
+        puntuacion: 9999
     }, {
-        username: "Ash",
-        score: 2500
+        nombre: "Ash",
+        puntuacion: 2500
     },
     {
-        username: "Misty",
-        score: 2000
+        nombre: "Misty",
+        puntuacion: 2000
     },
 ]
 
