@@ -1,6 +1,6 @@
 const divScore = document.querySelector('.score');
 const nombre = document.querySelector('.nombre');
-let userScores = [];
+let userScores = new Array();
 
 class userScore {
     constructor(name, score) {
@@ -12,12 +12,12 @@ class userScore {
 function getScore() {
     let dificultad = (document.querySelector('#dificultad').value) / 2;
     let tiempo = count;
-    let score = 1000 * dificultad / tiempo;
-    return score;
+    let score = 10000 * dificultad / tiempo;
+    return score.toFixed(0);
 }
 
 function imprScore() {
-    getScore() = divScore.innerHTML;
+    divScore.innerHTML = getScore();
 }
 
 function crearUserScores() {
