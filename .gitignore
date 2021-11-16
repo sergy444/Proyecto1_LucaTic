@@ -1,6 +1,2 @@
-#ignora la carpeta node_modules
-node_modules/
-#ignora test de sudoku.js
-sudoku.test.js
-#ignora el packa.json
-package.json
+# Ignora la carpeta node_modules
+node_modules
