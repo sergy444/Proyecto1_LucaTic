@@ -20,11 +20,14 @@ main {
     color: rgb(1, 42, 58);
 }
 
+#boton-validar{
+    margin-top: 1rem;
+}
+
 #carta {
     max-width: 25rem;
     margin: auto;
 }
-
 
 
 #nombre,
@@ -45,10 +48,10 @@ label {
     margin: auto;
 }
 
-.oculto {
-    filter: brightness(0);
-}
-
 .hidden {
     display: none !important;
+}
+
+.oculto {
+    filter: brightness(0);
 }
