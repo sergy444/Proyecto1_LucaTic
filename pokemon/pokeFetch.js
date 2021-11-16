@@ -50,13 +50,13 @@ function cargarJuego() {
   juego.classList.remove("hidden");
 
   traerPokemon();
-
+  
 }
 
 //añadimos al botón de comenzar la función para cargar el juego
 let cargar = document.getElementById("boton-comenzar");
 cargar.addEventListener("click", cargarJuego);
 
-export {
+module.exports = {
   pokeName, traerPokemon
 };
