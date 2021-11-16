@@ -1,7 +1,5 @@
-const nombre = document.querySelector('.nombre');
 const pantInicial = document.querySelector('.pant-inicial');
 const pantSudoku = document.querySelector('.pant-sudoku');
-
 
 document.querySelector('#btn-new').addEventListener('click', () => {
     if (nombre.value.trim().length > 0) {
@@ -10,7 +8,7 @@ document.querySelector('#btn-new').addEventListener('click', () => {
         cronometro();
         setDificultad();
         rellenarCasilla(setSudoku);
-        alert('iniciar juego');
+
     } else {
         nombre.classList.add('input-err');
         setTimeout(() => {
