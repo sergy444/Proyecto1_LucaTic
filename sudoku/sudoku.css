@@ -25,7 +25,8 @@
         z-index: 1;
     }
     
-    input {
+    input,
+    input:disabled {
         background-color: rgb(35, 40, 42);
         text-align: center;
         width: 50px;
