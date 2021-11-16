@@ -13,6 +13,7 @@ class Usuario {
     }
 }
 
+//Lista de scores predeterminados
 const highScores = [{
         nombre: "Red",
         puntuacion: 9999
@@ -26,15 +27,19 @@ const highScores = [{
     },
 ]
 
-localStorage.setItem("scores", JSON.stringify(highScores))
-
+//Crear primera entrada de scores en la pagina
 const setScore = function () {
 
-    return localStorage.setItem("scores", JSON.stringify(highScores))
+    let checkUsers = JSON.parse(localStorage.getItem("scores"))
+    //Revisa la existencia de un array ya existente para crear uno base o no
+    let existingUsers = checkUsers ? "" : localStorage.setItem("scores", JSON.stringify(highScores))
+
+    return existingUsers
 
 
 
 }
+setScore()
 
 
 

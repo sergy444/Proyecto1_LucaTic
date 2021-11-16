@@ -1,4 +1,3 @@
-
 //escondo el contenedor de la primera página
 const seleccion = document.getElementById("seleccion");
 
@@ -43,10 +42,10 @@ async function traerPokemon() {
 }
 
 function cargarJuego() {
-    let nombreUsuario = document.getElementById("nombre").value;
+  let nombreUsuario = document.getElementById("nombre").value;
   //ocultamos primer contenedor
   seleccion.classList.add("hidden");
-  
+
   //mostramos segundo contenedor
   juego.classList.remove("hidden");
 
@@ -54,10 +53,8 @@ function cargarJuego() {
 
 }
 
-
-
 //añadimos al botón de comenzar la función para cargar el juego
 let cargar = document.getElementById("boton-comenzar");
 cargar.addEventListener("click", cargarJuego);
 
-export {pokeName,pokeId, isLegendary, types, imgPokemon};
+export {pokeName,pokeId, isLegendary, types, imgPokemon,traerPokemon};
