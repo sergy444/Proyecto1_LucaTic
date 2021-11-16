@@ -10,7 +10,7 @@ let imgPokemon = document.getElementById("imagen-pokemon");
 
 //definimos variables para el uso del fetch
 let pokeName, pokeId, sprite, isLegendary, types;
-//declaramos variables para los intentos y aciertos
+
 
 
 async function traerPokemon() {
@@ -60,4 +60,4 @@ function cargarJuego() {
 let cargar = document.getElementById("boton-comenzar");
 cargar.addEventListener("click", cargarJuego);
 
-export {pokeName};
+export {pokeName,pokeId, isLegendary, types, imgPokemon};
