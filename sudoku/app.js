@@ -8,6 +8,8 @@ document.querySelector('#btn-new').addEventListener('click', () => {
         pantInicial.classList.add('trans');
         pantSudoku.classList.remove('trans');
         cronometro();
+        setDificultad();
+        rellenarCasilla(setSudoku);
         alert('iniciar juego');
     } else {
         nombre.classList.add('input-err');

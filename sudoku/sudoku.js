@@ -73,25 +73,30 @@ let sudokuDificilVacio = {
 class Sudoku {
     constructor(x, y) {
         this.completo = x,
-            this.vacio = y
+        this.vacio = y
     }
 }
+let setSudoku;
 
-let dificultad = document.querySelector('#dificultad').value
+function setDificultad() {
 
-function setDificultad(n1) {
+    let dificultad = document.querySelector('#dificultad').value
 
-    switch (n1) {
-        case 1:
-            reutrn: (sudokuFacil, sudokuFacilVacio);
-            break;
-        case 2:
-            reutrn: (sudokuInter, sudokuIntervacio);
-            break;
-        case 3:
-            reutrn: (sudokuDificil, sudokuDificilVacio);
-            break;
+    function selectDif(n1) {
+
+        switch (n1) {
+            case '1':
+                setSudoku = new Sudoku (sudokuFacil, sudokuFacilVacio);
+                break;
+            case '2':
+                setSudoku = new Sudoku (sudokuInter, sudokuIntervacio);
+                break;
+            case '3':
+                setSudoku = new Sudoku (sudokuDificil, sudokuDificilVacio);
+                break;
+        }
     }
-}
 
-let setSudoku = new Sudoku(setDificultad(dificultad))
+    selectDif(dificultad)
+    
+}
