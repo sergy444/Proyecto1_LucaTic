@@ -7,6 +7,7 @@ document.querySelector('#btn-new').addEventListener('click', () => {
     if (nombre.value.trim().length > 0) {
         pantInicial.classList.add('trans');
         pantSudoku.classList.remove('trans');
+        cronometro();
         alert('iniciar juego');
     } else {
         nombre.classList.add('input-err');
