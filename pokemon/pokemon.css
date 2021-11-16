@@ -24,9 +24,7 @@ main {
     margin: auto;
 }
 
-#imagen-pokemon {
-    filter: brightness(0);
-}
+
 
 #nombre,
 label {
@@ -44,6 +42,10 @@ label {
     text-align: center;
     padding-top: 1rem;
     margin: auto;
+}
+
+.oculto {
+    filter: brightness(0);
 }
 
 .hidden {
