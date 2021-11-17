@@ -100,3 +100,5 @@ function setDificultad() {
     selectDif(dificultad)
     
 }
+
+module.exports = {sudokuFacil, sudokuFacilVacio, setDificultad, Sudoku}
