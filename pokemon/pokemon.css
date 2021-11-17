@@ -1,0 +1,107 @@
+main {
+    background-color: rgb(20, 25, 35);
+    background: linear-gradient(45deg, rgb(13, 17, 24) 0%, rgb(8, 23, 61) 35%, rgb(10, 13, 19) 100%);
+    font-size: 2.2vh;
+    padding: 1em;
+}
+
+#boton-comenzar, #boton-validar, #boton-pista{
+    color: aliceblue;
+    background-color: rgb(35, 40, 42);
+    width: 200px;
+    border-radius: 1rem;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+#boton-comenzar:hover, #boton-validar:hover, #boton-pista:hover{
+    background-color: rgb(30, 18, 71);
+    color: aliceblue;
+}
+
+#boton-comenzar {
+    max-width: 10em;
+    align-self: center;
+}
+
+
+#texto-carta,
+#titulo-carta,
+#nombre-pokemon,
+#puntuacion,
+.puntuacionIntentos {
+    color: aliceblue;
+}
+
+#boton-validar, #boton-pista{
+    margin-top: 1rem;
+}
+
+#carta {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 27rem;
+    margin: auto;
+    background-color: rgb(35, 40, 42);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem;
+}
+
+#intentos{
+    color:rgb(182, 133, 59)
+}
+
+#aciertos{
+    color: rgb(110, 172, 110);
+}
+
+#nombre,
+label {
+    display: flex;
+    margin: auto;
+}
+
+#nombre, #nombre-pokemon{
+    color: aliceblue;
+    background-color: rgb(35, 40, 42);
+    width: 210px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    border-color: silver;
+}
+
+#seleccion {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#seleccion h2{
+    font-family: 'Bangers', cursive;
+}
+
+#seleccion p {
+    text-align: center;
+    padding-top: 1rem;
+    margin: auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.oculto {
+    filter: brightness(0);
+}
+
+.principal{
+    display: flex;
+    
+    min-height: 34.8rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
