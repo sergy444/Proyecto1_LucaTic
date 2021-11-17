@@ -1,11 +1,30 @@
 main {
     background-color: rgb(20, 25, 35);
     background: linear-gradient(45deg, rgb(13, 17, 24) 0%, rgb(8, 23, 61) 35%, rgb(10, 13, 19) 100%);
-    font-size: 2.2vh;
-    padding: 1em;
+    height: calc(100vh - 62.3px);
+    overflow-x: hidden;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#boton-comenzar, #boton-validar, #boton-pista{
+header {
+    width: 100%; 
+}
+
+footer {
+    width: 100%;
+}
+
+#aciertos {
+    color: rgb(110, 172, 110);
+}
+
+#boton-comenzar,
+#boton-validar,
+#boton-pista,
+#boton-reiniciar {
     color: aliceblue;
     background-color: rgb(35, 40, 42);
     width: 200px;
@@ -15,7 +34,10 @@ main {
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 }
 
-#boton-comenzar:hover, #boton-validar:hover, #boton-pista:hover{
+#boton-comenzar:hover,
+#boton-validar:hover,
+#boton-pista:hover,
+#boton-reiniciar:hover {
     background-color: rgb(30, 18, 71);
     color: aliceblue;
 }
@@ -25,7 +47,6 @@ main {
     align-self: center;
 }
 
-
 #texto-carta,
 #titulo-carta,
 #nombre-pokemon,
@@ -34,14 +55,16 @@ main {
     color: aliceblue;
 }
 
-#boton-validar, #boton-pista{
+#boton-validar,
+#boton-pista {
     margin-top: 1rem;
 }
 
 #carta {
+    
     display: flex;
     flex-wrap: wrap;
-    max-width: 27rem;
+    max-width: 30rem;
     margin: auto;
     background-color: rgb(35, 40, 42);
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
@@ -49,12 +72,21 @@ main {
     padding: 1rem;
 }
 
-#intentos{
-    color:rgb(182, 133, 59)
+#intentos {
+    color: rgb(182, 133, 59)
 }
 
-#aciertos{
-    color: rgb(110, 172, 110);
+#imagen-pokemon{
+    max-width: 15em;
+    margin: auto;
+}
+
+#juego{
+    display: flex;
+    padding: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 #nombre,
@@ -63,7 +95,8 @@ label {
     margin: auto;
 }
 
-#nombre, #nombre-pokemon{
+#nombre,
+#nombre-pokemon {
     color: aliceblue;
     background-color: rgb(35, 40, 42);
     width: 210px;
@@ -79,7 +112,7 @@ label {
     margin: auto;
 }
 
-#seleccion h2{
+#seleccion h2 {
     font-family: 'Bangers', cursive;
 }
 
@@ -97,11 +130,22 @@ label {
     filter: brightness(0);
 }
 
-.principal{
+.principal {
     display: flex;
-    
     min-height: 34.8rem;
     align-items: center;
     justify-content: center;
     margin: auto;
+}
+
+@media all and (max-width: 650px) {
+    #carta {
+        max-width: 18rem;
+    }
+    #imagen-pokemon{
+        max-width: 14em;
+    }
+    #juego{
+        padding: 0.8rem;
+    }
 }
