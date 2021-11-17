@@ -7,7 +7,7 @@
     "jest": "^27.3.1"
   },
   "scripts": {
-    "test": "jest",
-    "setupTestFrameworkScriptFile":"localStorage.js"
+    "test": "jest --env=jsdom",
+    "setupTestFrameworkScriptFile": "localStorage.js"
   }
 }
