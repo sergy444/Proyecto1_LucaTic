@@ -136,6 +136,7 @@ function pintarEstadisticas() {
 function validarRespuesta() {
   //guardamos el valor que el usuario escribe en el imput
   valorNombre = document.querySelector("#nombre-pokemon").value;
+  valorNombre = valorNombre.toLowerCase();
   const sumarScore = function () {
     return numRespuestaCorrecta++
   }
