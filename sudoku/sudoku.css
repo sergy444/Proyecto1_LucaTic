@@ -33,10 +33,6 @@ h4 {
     font-weight: 100 !important;
 }
 
-.pant-score h2 {
-    margin-left: 3.5vh;
-}
-
 input,
 input:disabled {
     background-color: rgb(35, 40, 42);
@@ -251,7 +247,6 @@ button.btn:hover {
 
 #btn-volver {
     margin-top: 1em;
-    margin-left: 25%;
     color: aliceblue;
     background-color: rgb(35, 40, 42);
     padding: 0em 0.8em 0.2em;
@@ -324,7 +319,7 @@ button.btn:hover {
 
 table {
     margin: 0 auto;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 100;
     background-color: rgb(35, 40, 42);
     padding: 1em;

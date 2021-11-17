@@ -29,6 +29,5 @@ document.querySelector('#verHighscore').addEventListener('click', () => {
 })
 
 document.querySelector('#btn-volver').addEventListener('click', () => {
-    pantInicial.classList.remove('trans');
-    pantScore.classList.add('trans');
+    location.reload();
 })
