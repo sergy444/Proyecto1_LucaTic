@@ -138,6 +138,77 @@ label {
     margin: auto;
 }
 
+.ventana-modal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 800px;
+    margin-top: 10rem;
+    
+    font-size: 3.5vh;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 400px);
+
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    border-color: silver;
+    color: aliceblue;
+    background-color: rgb(35, 40, 42);
+    border-radius: 1rem;
+
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+    
+
+    transition: transform .8s ease-in-out;
+}
+
+.container-texto-ventana{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+#correcto{
+    border: 2px solid rgb(35, 255, 108);
+}
+
+#incorrecto{
+    border: 2px solid rgb(255, 32, 69);;
+}
+
+.container-texto-ventana img{
+    width: 4rem;
+}
+
+.container-texto-ventana h2{
+    font-size: 4rem;
+}
+
+.boton-continuar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.boton-continuar button{
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    border-color: silver;
+    color: aliceblue;
+    background-color: rgb(35, 40, 42);
+    border-radius: 1rem;
+}
+
+.boton-continuar button:hover{
+    background-color: rgb(30, 18, 71);
+    color: aliceblue;
+}
+
 @media all and (max-width: 650px) {
     #carta {
         max-width: 18rem;
@@ -147,5 +218,12 @@ label {
     }
     #juego{
         padding: 0.8rem;
+    }
+    .ventana-modal{
+        width: 300px;
+        margin-left:10.5em;
+    }
+    .ventana-modal h2{
+        font-size: 2rem;
     }
 }
