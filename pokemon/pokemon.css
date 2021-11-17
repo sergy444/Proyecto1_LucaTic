@@ -26,7 +26,8 @@ footer {
 
 #boton-comenzar,
 #boton-validar,
-#boton-pista {
+#boton-pista,
+#boton-reiniciar {
     color: aliceblue;
     background-color: rgb(35, 40, 42);
     width: 190px;
@@ -38,7 +39,8 @@ footer {
 
 #boton-comenzar:hover,
 #boton-validar:hover,
-#boton-pista:hover {
+#boton-pista:hover,
+#boton-reiniciar:hover {
     background-color: rgb(30, 18, 71);
     color: aliceblue;
 }
@@ -130,6 +132,7 @@ label {
     justify-content: center;
     margin: auto;
 }
+
 @media all and (max-width: 650px) {
     #carta {
         margin-top: 11.5vh !important;
