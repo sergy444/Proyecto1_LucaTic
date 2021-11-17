@@ -6,22 +6,21 @@ main {
     user-select: none;
 }
 
-
-
 header {
     position: fixed;
     width: 100%;
     z-index: 1;
 }
 
-
-
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 1;
+}
 
+#aciertos {
+    color: rgb(110, 172, 110);
 }
 
 #boton-comenzar,
@@ -50,7 +49,6 @@ footer {
     align-self: center;
 }
 
-
 #texto-carta,
 #titulo-carta,
 #nombre-pokemon,
@@ -68,7 +66,7 @@ footer {
     margin-top: 11.5vh !important;
     display: flex;
     flex-wrap: wrap;
-    max-width: 27rem;
+    max-width: 30rem;
     margin: auto;
     background-color: rgb(35, 40, 42);
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
@@ -80,8 +78,15 @@ footer {
     color: rgb(182, 133, 59)
 }
 
-#aciertos {
-    color: rgb(110, 172, 110);
+#imagen-pokemon{
+    max-width: 15em;
+    margin: auto;
+}
+
+#juego{
+    display: flex;
+    padding: 1.3rem;
+    margin: auto;
 }
 
 #nombre,
@@ -144,5 +149,14 @@ label {
         box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
         text-align: center;
         padding: 1rem;
+    }
+    #imagen-pokemon{
+        max-width: 14em;
+        margin: auto;
+    }
+    #juego{
+        display: flex;
+        padding: 0.8rem;
+        margin: auto;
     }
 }
