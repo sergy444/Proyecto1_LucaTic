@@ -49,7 +49,7 @@ function rellenarSudoku(casillasArray) {
                 e.target.classList.add('input-err2');
                 setTimeout(() => {
                     e.target.classList.remove('input-err2');
-                    nombre.focus();
+                    e.target.value = "";
                 }, 500);
             }
         });
