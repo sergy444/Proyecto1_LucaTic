@@ -43,5 +43,3 @@ function imprHighScore() {
     </tr>`
     }
 }
-
-module.exports = {userScore}
