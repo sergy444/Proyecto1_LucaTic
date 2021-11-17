@@ -181,7 +181,7 @@ function mostrarPista() {
           tipo2 = types[1].type.name;
         }
       } catch (err) {
-        console.log(err);
+        console.log("Este pokemon no tiene tipo secundario");
       }
       textoPista.innerHTML = `El pokemon es de tipo: ${types[0].type.name}  ${tipo2}`;
       break;
