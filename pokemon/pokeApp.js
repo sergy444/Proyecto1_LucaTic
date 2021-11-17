@@ -215,5 +215,10 @@ pista.addEventListener("click", mostrarPista);
 
 
 export {
-  validarRespuesta
+  validarRespuesta,
+  valorNombre,
+  intentosRestantes,
+  numRespuestaCorrecta,
+  queGeneracion,
+  genPoke
 };
