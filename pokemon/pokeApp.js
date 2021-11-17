@@ -244,5 +244,10 @@ let ventanaIncorrecto = document.getElementById("continuarIncorrecto");
 ventanaIncorrecto.addEventListener("click", cerrarIncorrecto);
 
 export {
-  validarRespuesta
+  validarRespuesta,
+  valorNombre,
+  intentosRestantes,
+  numRespuestaCorrecta,
+  queGeneracion,
+  genPoke
 };

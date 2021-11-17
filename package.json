@@ -11,8 +11,6 @@
         "testEnvironment": "jsdom"
   },
   "scripts": {
-    "test": "jest",
-    "setupTestFrameworkScriptFile":"localStorage.js"
+    "test": "jest --env=jsdom",
+    "setupTestFrameworkScriptFile": "localStorage.js"
   }
-
-}
