@@ -68,3 +68,5 @@ function rellenarCasilla(sudoku) {
     }
     rellenarSudoku(casillasArray)
 }
+
+module.exports =  {Casilla, rellenarCasilla, rellenarSudoku,casillasArray};
