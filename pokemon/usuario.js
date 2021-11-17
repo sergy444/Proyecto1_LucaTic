@@ -58,5 +58,5 @@ export {
 
 }
 
-//export default Usuario;
-module.exports = {Usuario,highScores};
+export default Usuario;
+//module.exports = {Usuario,highScores};
