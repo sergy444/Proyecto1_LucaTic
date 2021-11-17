@@ -1,7 +1,7 @@
 const pantInicial = document.querySelector('.pant-inicial');
 const pantSudoku = document.querySelector('.pant-sudoku');
 const pantScore = document.querySelector('.pant-score');
-const btnVerHighscore = document.querySelector('#verHighscore')
+const btnVerHighscore = document.querySelector('.pant-victoria');
 
 document.querySelector('#btn-new').addEventListener('click', () => {
     if (nombre.value.trim().length > 0) {
@@ -21,9 +21,14 @@ document.querySelector('#btn-new').addEventListener('click', () => {
 
 document.querySelector('#verHighscore').addEventListener('click', () => {
     pantSudoku.classList.add('trans');
+    btnVerHighscore.classList.add('trans');
     pantScore.classList.remove('trans');
     cargarUserScores();
-    crearUserScores();
     guardarUserScores();
     imprHighScore();
+})
+
+document.querySelector('#btn-volver').addEventListener('click', () => {
+    pantInicial.classList.remove('trans');
+    pantScore.classList.add('trans');
 })

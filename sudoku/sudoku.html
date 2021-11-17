@@ -79,8 +79,6 @@
             <div class="pant-sudoku trans">
                 <div class="row score-crono">
                     <div id="cronometro" class="crono">Cronómetro</div>
-                    <button id="verHighscore" class="btn trans">Ver puntuaciones</button>
-                    <div class="score">Score</div>
                 </div>
                 <div class="row">
                     <div class="col"><input type="number" id="a1"></div>
@@ -183,22 +181,57 @@
                     <div class="col"><input type="number" id="i9"></div>
                 </div>
             </div>
-            <div class="pant-score trans">
+            <!-- Pantalla de Score -->
+            <div class="pant-score">
                 <div class="row">
                     <div class="row">
                         <h2>Puntuaciones Altas</h2>
-                    </div>
-                    <div class="cloumn">
-                        <table id="highScores">
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Puntuacion</th>
-                            </tr>
-                        </table>
+                        <div class="column">
+                            <table id="highScores">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Puntuacion</th>
+                                </tr>
+                                <tr>
+                                    <td id="nombre1"></td>
+                                    <td id="score1"></td>
+                                </tr>
+                                <tr>
+                                    <td id="nombre2"></td>
+                                    <td id="score2"></td>
+                                </tr>
+                                <tr>
+                                    <td id="nombre3"></td>
+                                    <td id="score3"></td>
+                                </tr>
+                                <tr>
+                                    <td id="nombre4"></td>
+                                    <td id="score4"></td>
+                                </tr>
+                                <tr>
+                                    <td id="nombre5"></td>
+                                    <td id="score5"></td>
+                                </tr>
+                            </table>
+                            <button class="btn" id="btn-volver">volver al menú principal</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- pantalla de victoria -->
+            <div class="pant-victoria">
+                <div class="carta">
+                    <div class="row">
+                        <h2>Felicitaciones</h2>
+                        <h4>su puntuación es:</h4>
+                    </div>
+                    <div class="row score">
+                        Score
+                    </div>
+                    <br>
+                    <div class="row"><button id="verHighscore">VER PUNTUACIONES</button></div>
+                </div>
+            </div>
     </main>
 
 
