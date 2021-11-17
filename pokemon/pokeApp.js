@@ -41,6 +41,7 @@ function crearUsuario() {
   //aqui termina lo que modificó maria
 }
 const mostrarScore = function () {
+  
   let scores = JSON.parse(localStorage.getItem("scores"))
   let usuario1 = JSON.parse(localStorage.getItem("usuario"))
   //Copia de los scores predeterminados
@@ -48,6 +49,7 @@ const mostrarScore = function () {
   //Evalua el valor de intentos para sumar el total de puntaje 
   //-Joseba
   if (intentosRestantes === 0) {
+    document.getElementById("agradecimiento").classList.remove("hidden");
     usuario1.puntuacion = numRespuestaCorrecta * 50;
     //Desabilita el boton para dejar de intentar
     //-Joseba
@@ -147,14 +149,16 @@ function validarRespuesta() {
 
   //comparamos el valor que pone el usuario con la variable que guarda el nombre del pokemon actual
   if (valorNombre == pokeName) {
-    window.alert("respuesta correcta");
+    //window.alert("respuesta correcta");
+    document.getElementById("correcto").classList.remove("hidden");
     sumarScore()
     setTimeout(() => {
       cambiarPokemon();
     }, 1000);
     aciertosTexto.innerHTML = `Aciertos: ${numRespuestaCorrecta}`;
   } else {
-    window.alert("respuesta incorrecta");
+    //window.alert("respuesta incorrecta");
+    document.getElementById("incorrecto").classList.remove("hidden");
     contarIntentos()
     intentosTexto.innerHTML = `Intentos restantes: ${intentosRestantes}`;
   }
@@ -201,6 +205,20 @@ function mostrarPista() {
 
 }
 
+//función para ocultar ventana de agradecimiento
+function cerrarAgradecimiento(){
+  document.getElementById("agradecimiento").classList.add("hidden");
+}
+
+//función para ocultar ventana de correcto
+function cerrarCorrecto(){
+  document.getElementById("correcto").classList.add("hidden");
+}
+
+//función para ocultar ventana de incorrecto
+function cerrarIncorrecto(){
+  document.getElementById("incorrecto").classList.add("hidden");
+}
 
 pintarEstadisticas()
 
@@ -213,6 +231,17 @@ validar.addEventListener("click", validarRespuesta);
 let pista = document.querySelector("#boton-pista");
 pista.addEventListener("click", mostrarPista);
 
+//para cerrar la ventana modal de agradecimiento
+let ventanaAgradecimiento = document.getElementById("continuarHighscore");
+ventanaAgradecimiento.addEventListener("click", cerrarAgradecimiento);
+
+//para cerrar la ventana modal de acierto
+let ventanaCorrecto = document.getElementById("continuarCorrecto");
+ventanaCorrecto.addEventListener("click", cerrarCorrecto);
+
+//para cerrar la ventana modal de error
+let ventanaIncorrecto = document.getElementById("continuarIncorrecto");
+ventanaIncorrecto.addEventListener("click", cerrarIncorrecto);
 
 export {
   validarRespuesta,
