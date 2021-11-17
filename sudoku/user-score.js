@@ -1,8 +1,6 @@
 const divScore = document.querySelector('.score');
 const nombre = document.querySelector('.nombre');
-const tablaHighScores = document.querySelector('#highScores');
 let arrayScore = new Array;
-let tablaContent = tablaHighScores.innerhtml;
 
 class userScore {
     constructor(name, score) {
@@ -23,11 +21,8 @@ function imprScore() {
 }
 
 function crearUserScores() {
-    //let usuarioActual = new userScore(nombre.value, getScore());
-    let usuarioActual = new userScore('prueba', 10);
-    console.log(usuarioActual);
+    let usuarioActual = new userScore(nombre.value, getScore());
     arrayScore.push(usuarioActual);
-    console.log(arrayScore);
 }
 
 function guardarUserScores() {
@@ -42,13 +37,26 @@ function cargarUserScores() {
     }
 }
 
+function imprRespuesta(respuesta) {
+    let answer = document.querySelector('#highScores');
+    answer.innerHTML += respuesta;
+}
+
 function imprHighScore() {
     let topFive = [...arrayScore];
     topFive.sort((a, b) => {
         return b.score - a.score
-    })
-    let topSorted = topFive.slice(0, 5)
+    });
+    let topSorted = topFive.slice(0, 5);
+
     for (i = 0; i < 5; i++) {
-        console.log(topSorted[i].name, topSorted[i].score)
+        let nombre = topSorted[i].name;
+        let score = topSorted[i].score;
+        imprRespuesta(
+            `<tr>
+        <td>${nombre}</td>
+        <td>${score}</td>
+        </tr>`
+        )
     }
 }
