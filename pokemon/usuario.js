@@ -1,6 +1,6 @@
 //import * as pepe from '../localStorage.js';
 
-export default class Usuario {
+class Usuario {
     constructor(nombre, puntuacion) {
         this.nombre = nombre;
         this.puntuacion = puntuacion;
@@ -59,4 +59,4 @@ export {
 }
 
 //export default Usuario;
-//module.exports = {Usuario};
+module.exports = {Usuario,highScores};
