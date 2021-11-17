@@ -52,5 +52,3 @@ function imprHighScore() {
         console.log(topSorted[i].name, topSorted[i].score)
     }
 }
-
-module.exports = {userScore}

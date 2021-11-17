@@ -2,7 +2,6 @@ const rellenarCasilla = require('./casillas').rellenarCasilla;
 const casillasArray = require('./casillas').casillasArray;
 const Casilla = require('./casillas').Casilla;
 const Sudoku = require('./sudoku').Sudoku;
-const userScore = require('./user-score').userScore;
 const sudokuFacil = require('./sudoku').sudokuFacil;
 const sudokuFacilVacio = require('./sudoku').sudokuFacilVacio;
 
@@ -160,15 +159,5 @@ describe("Sudoku", () => {
     })
     test("la propiedad completa de sudoku1 vale1", () => {
         expect(sudoku1.completo).toBe(1);
-    })
-});
-
-describe("userScore", () => {
-    const score1 = new userScore("martinez", 420);
-    test("la propiedad name de score1 es martinez", () => {
-        expect(score1.name).toBe("martinez");
-    })
-    test("la propiedad score de score1 vale1", () => {
-        expect(score1.score).toBe(420);
     })
 });
