@@ -8,10 +8,10 @@
     "jest": "^27.3.1"
   },
   "jest": {
-        "testEnvironment": "jsdom"
-  },
+    "testEnvironment": "jsdom"
+},
   "scripts": {
-    "test": "jest --env=jsdom",
+    "test": "jest",
     "setupTestFrameworkScriptFile": "localStorage.js"
   }
 }
