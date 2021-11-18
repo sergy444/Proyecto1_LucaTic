@@ -1,3 +1,5 @@
+//import * as pepe from '../localStorage.js';
+
 class Usuario {
     constructor(nombre, puntuacion) {
         this.nombre = nombre;
@@ -31,6 +33,11 @@ const highScores = [{
 const setScore = function () {
 
     let checkUsers = JSON.parse(localStorage.getItem("scores"))
+
+    /*let checkUsers = JSON.parse = jest.fn().mockImplementationOnce(() => {
+        localStorage.getItem("scores")
+      });*/
+
     //Revisa la existencia de un array ya existente para crear uno base o no
     let existingUsers = checkUsers ? "" : localStorage.setItem("scores", JSON.stringify(highScores))
 
@@ -52,3 +59,4 @@ export {
 }
 
 export default Usuario;
+//module.exports = {Usuario,highScores};

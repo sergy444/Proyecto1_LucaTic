@@ -12,7 +12,10 @@
 	<link rel="icon" type="image/svg+xml"
 		href="https://img.icons8.com/external-photo3ideastudio-gradient-photo3ideastudio/64/000000/external-pig-food-delivery-photo3ideastudio-gradient-photo3ideastudio.png">
 	<link type="text/plain" rel="author" href="../human.txt" />
-	<title>Adivina el Pokémon</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<title>Who's That Pokemon</title>
 </head>
 
 <body>
@@ -25,11 +28,12 @@
 							alt="LechonGames icono 2021" title="logo" />
 						<h1>LechonGames</h1>
 						<ul class="d-none d-md-flex">
-							<li class="nav-link"><a href="index.html">Home</a></li>
-							<li class="nav-link"><a href="proyectos.html">Proyectos</a></li>
-							<li class="nav-link"><a href="noticias.html">Noticias</a></li>
-							<li class="nav-link"><a href="equipo.html">Equipo</a></li>
-							<li class="nav-link"><a href="contacto.html">Contacto</a></li>
+							<li class="nav-link"><a href="../ES/index.html">Home</a></li>
+							<li class="nav-link"><a href="../ES/proyectos.html">Proyectos</a></li>
+							<li class="nav-link"><a href="../ES/noticias.html">Noticias</a></li>
+							<li class="nav-link"><a href="../ES/equipo.html">Equipo</a></li>
+							<li class="nav-link"><a href="../ES/contacto.html">Contacto</a></li>
+							<li class="nav-link"><a href="../ES/minijuegos.html">Minijuegos</a></li>
 						</ul>
 						<div class="idioma">
 							<a href="../EN/contact.html">ES/EN</a>
@@ -49,11 +53,12 @@
 							<div class="collapse" id="navbarToggleExternalContent">
 								<div class="bg-custom p-4">
 									<ul class="d-flex flex-column">
-										<li class="nav-link"><a href="index.html">Home</a></li>
-										<li class="nav-link"><a href="proyectos.html">Proyectos</a></li>
-										<li class="nav-link"><a href="noticias.html">Noticias</a></li>
-										<li class="nav-link"><a href="equipo.html">Equipo</a></li>
-										<li class="nav-link"><a href="contacto.html">Contacto</a></li>
+										<li class="nav-link"><a href="../ES/index.html">Home</a></li>
+										<li class="nav-link"><a href="../ES/proyectos.html">Proyectos</a></li>
+										<li class="nav-link"><a href="../ES/noticias.html">Noticias</a></li>
+										<li class="nav-link"><a href="../ES/equipo.html">Equipo</a></li>
+										<li class="nav-link"><a href="../ES/contacto.html">Contacto</a></li>
+										<li class="nav-link"><a href="../ES/minijuegos.html">Minijuegos</a></li>
 									</ul>
 								</div>
 							</div>
@@ -67,6 +72,7 @@
 		<div class="row">
 			<div class="col-12 principal">
 				<div id="seleccion">
+					<h2>Who´s That Pokemon</h2>
 					<label for="nombre">Dinos tu nombre:
 						<input type="text" name="nombre" id="nombre">
 					</label>
@@ -75,19 +81,52 @@
 				</div>
 				<div id="juego" class="hidden">
 					<div class="card" id="carta">
-						<img class="card-img-top" alt="Card image cap" id="imagen-pokemon">
+						<img class="card-img-top oculto" src="#" alt="Card image cap" id="imagen-pokemon">
 						<div class="card-body">
 							<h4 class="card-title" id="titulo-carta">Adivina el Pokémon</h4>
 							<p class="card-text" id="texto-carta">
-								Some quick example text to build on the card title
-								and make up the bulk of the card's content.
 							</p>
+							<p class="puntuacionIntentos" id="intentos"></p>
+							<p class="puntuacionIntentos" id="aciertos"></p>
 							<input type="text" name="nombre-pokemon" id="nombre-pokemon">
 							<input type="button" value="Validar respuesta" id="boton-validar">
+							<input type="button" value="Mostrar pista" id="boton-pista">
 						</div>
 					</div>
 				</div>
-				<div id="puntuacion" class="hidden"></div>
+				<div id="puntuacion" class="hidden">
+					<h3 id="puntuacion-header">Mayores Puntuaciones</h3>
+					<input type="button" value="¡Volver a jugar!" id="boton-reiniciar">
+				</div>
+
+				<!--VENTANAS MODALES-->
+				<div class="ventana-modal hidden" id="agradecimiento">
+					<div class="container-ventana">
+						<div class="container-texto-ventana">
+							<h2>GRACIAS POR JUGAR</h2>
+							<img src="https://img.icons8.com/color/96/000000/pokeball-2.png" alt="pokeball" />
+						</div>
+						<div class="boton-continuar"><button id="continuarHighscore">CONTINUAR</button></div>
+					</div>
+				</div>
+				<div class="ventana-modal hidden" id="correcto">
+					<div class="container-ventana">
+						<div class="container-texto-ventana ">
+							<p>CORRECTO</p>
+							<img src="https://img.icons8.com/color/96/000000/pokeball-2.png" alt="pokeball" />
+						</div>
+						<div class="boton-continuar"><button id="continuarCorrecto">CONTINUAR</button></div>
+					</div>
+				</div>
+				<div class="ventana-modal hidden" id="incorrecto">
+					<div class="container-ventana">
+						<div class="container-texto-ventana ">
+							<p>INCORRECTO</p>
+							<img src="https://img.icons8.com/color/96/000000/pokeball-2.png" alt="pokeball" />
+						</div>
+						<div class="boton-continuar"><button id="continuarIncorrecto">CONTINUAR</button></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
